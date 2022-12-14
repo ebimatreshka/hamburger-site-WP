@@ -1,0 +1,56 @@
+//色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+
+//ボタン
+.c-button {
+  text-align        : center;
+  text-decoration   : none;
+
+  //グラデーションのボタン
+  &--gradation {
+    background-color: v.$color-bg-light-gray;
+    background      : linear-gradient(#F2EDE9, #DED8D3)
+  }
+  //archiveのcard型の詳しく見るのボタン
+  &__white {
+    background-color: v.$color-white;
+    @include m.tablet {
+      width : m.tb-vw( 163.16 );
+      height: m.tb-vw( 42.47 );
+      @include m.pc {
+        width : m.pc-vw( 292 );
+        height: m.pc-vw( 76 );
+      }
+    }
+  }
+  //paginationの箱型ボタン
+  &__pagination {
+    border: solid 1px v.$color-brown;
+    color : v.$color-brown;
+    @include m.tablet {
+      width       : m.tb-vw( 35 );
+      height      : m.tb-vw( 35 );
+      margin-right: m.tb-vw( 15 );
+      font-size   : m.tb-vw( 16 );
+      line-height : 2;
+    }
+    @include m.pc {
+      width       : m.pc-vw( 35 );
+      height      : m.pc-vw( 35 );
+      margin-right: m.pc-vw( 15 );
+      font-size   : m.pc-vw( 16 );
+    }
+  }
+} 
+
+.c-button__pagination {
+  &:hover {
+    @include m.tablet {
+      background-color: v.$color-dark-brown;
+      color           : v.$color-white;
+    }
+  }
+}

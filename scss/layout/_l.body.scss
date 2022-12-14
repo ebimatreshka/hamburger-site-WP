@@ -1,0 +1,14 @@
+//色指定
+@use "./../foundation/variables" as v;
+//ミックスイン
+@use "./../foundation/mixin" as m;
+
+
+
+//sp版の元の画面を
+.l-body.is-active {
+    overflow: hidden;
+    @include m.pc {
+        overflow-y: scroll;
+    }
+}

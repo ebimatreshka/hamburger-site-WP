@@ -1,0 +1,15 @@
+//色指定
+@use "./../foundation/variables" as v;
+//ミックスイン
+@use "./../foundation/mixin" as m;
+
+//sp縦並び
+.l-footer {
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
+    color          : v.$color-white;
+    @include m.tablet {
+        justify-content: space-evenly;
+    }
+}

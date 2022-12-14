@@ -1,0 +1,92 @@
+//色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//背景色指定
+.c-bg-color {
+    &--seashell {
+        background-color: v.$color-bg-seashell; //header
+    }
+    &--lightgray {
+        background-color: v.$color-bg-lightgray;    //ボタン、サイドバー
+    }
+    &--white {
+        background-color: v.$color-bg-white;    //take out/eat in
+    }
+    &--mocha {
+        background-color: v.$color-bg-mocha;   //フッター
+    }
+    &--dark-brown {
+        background-color: v.$color-bg-dark-brown;   //カード
+    }
+    &--light-gray {
+        background-color: v.$color-bg-light-gray;   //single-page
+    }
+    &--egg {
+        background-color: v.$color-bg-egg;   //archiveのmainの背景色
+    }
+}
+
+//背景
+.c-background {
+    background-repeat  : no-repeat;
+    background-size    : cover;
+    background-position: center;
+
+    //front-pageのmainvisual
+    &__main {
+        
+        @extend .c-background;
+        background-image: url('../images/mainvisual-sp.jpg');
+        background-color: green;
+        @include m.tablet {
+            @extend .c-background;
+            background-image: url("../images/mainvisual-pc.jpg");
+        }
+    }
+
+    //front-pageのパン3つの写真(左側)
+    &__menu--left {
+        @extend .c-background;
+        background-image: url("../images/brunch-menu-left.jpg");
+    }
+
+    //front-pageのバーガーの写真(右側)
+    &__menu--right {
+        @extend .c-background;
+        background-image: url("../images/brunch-menu-right.jpg");
+    }
+
+    //front-pageのmap
+    &__map {
+        @extend .c-background;
+        background-image: url("../images/map.jpg")
+    }
+
+    //archive-pageのパン３つ写真
+    &__archive {
+        @extend .c-background;
+        background-image: url("../images/page-title_arcive.jpg");
+        background-position: inherit
+    }
+
+    //single-pageのバーガーアップ写真
+    &__single {
+        @extend .c-background;
+        background-image: url("../images/hamburger-single.jpg");
+    }
+
+    //ショップの外観写真
+    &__page {
+        @extend .c-background;
+        background-image: url("../images/shop.jpg");
+    }
+
+    //footerの茶色の背景色
+    &__footer {
+        @extend .c-background;
+        background-image: url("../images/footer.jpg");
+    }
+
+}

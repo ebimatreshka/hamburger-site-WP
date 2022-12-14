@@ -1,0 +1,13 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+.u-width__single-table-left {
+    width: 40%;
+    @include m.tablet {
+        @include m.pc {
+            width: 31.5%;
+        }
+    }
+}

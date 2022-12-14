@@ -1,0 +1,47 @@
+//色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+
+//擬似要素(下線)
+
+.c-pseudo-element {
+    //pageを覆う黒透過幕
+    &__black::after {
+        content         : "";
+        display         : block;
+        position        : absolute;
+        top             : 0;
+        right           : 0;
+        bottom          : 0;
+        left            : 0;
+        background-color: rgba(0, 0, 0, 0.5); //黒透過率100%
+    }
+    //paginationの《
+    &__《::before {
+        // content         : "《";
+        content: "前へ";
+        display         : block;
+        position        : absolute;
+        height          : m.sp-vw( 22 );
+        background-color: v.$color-bg-egg;
+        left            : m.sp-vw( 46 );
+        @include m.tablet {
+            display: none; //前へを非表示に
+        }
+    }
+    //paginationの》
+    &__》::after {
+        // content         : "》";
+        content: "次へ";
+        // display         : block;
+        position        : absolute;
+        height          : m.sp-vw( 22 );
+        background-color: v.$color-bg-egg;
+        right           : m.sp-vw( 45 );
+        @include m.tablet {
+            display: none; //次へを非表示に
+        }
+    }
+}

@@ -1,0 +1,96 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//front-pageの地図部分
+.p-access {
+    min-height    : m.sp-vw( 691 );
+    position      : relative;
+    @include m.tablet {
+        min-height: m.tb-vw( 415 );
+    }
+    @include m.pc {
+        min-height: m.pc-vw( 649 );
+    }
+
+    //全体の黒の背景を擬似要素で
+    &::before {
+            content         : '';
+            position        : absolute;
+            top             : 0;
+            right           : 0;
+            bottom          : 0;
+            left            : 0;
+            background-color: rgba(0,0,0,0.4);
+            height          : 60%;
+            @include m.tablet {
+                height: 100%;
+            }
+    }
+
+    //文字部分の黒背景
+    &__container {
+        position        : relative;
+        background-color: rgba(0,0,0,0.29);
+        width           : 100%;
+        min-height      : m.sp-vw( 243.36 );
+        line-height     : 2.36;
+        @include m.tablet {
+            min-height  : m.tb-vw( 415 );
+        }
+        @include m.pc {
+            width       : 61%;
+            min-height  : 33.8020833333vw;
+        }
+    }
+
+    //見出し
+    &__title {
+        position        : absolute;
+        padding-top     : m.sp-vw( 40, 375 );
+        padding-left    : m.sp-vw( 42, 375 );
+        font-size       : m.sp-vw( 30, 375);
+        @include m.tablet {
+            font-size   : m.tb-vw( 30 );
+            padding-left: 3.62vw;
+            padding     : 4.79vw 0 0 5.03vw;
+        }
+        @include m.pc {
+            font-size   : m.pc-vw( 36 );            // padding-left: 6.19vw;
+            padding     : 4.32vw 0 0 6.19vw;
+        }
+    }
+
+    //見出しの下線
+    &__title::after {
+        width     : 20vw;
+        height    : 0.53vw;
+        top       : 32vw;
+        @include m.tablet {
+            width : m.tb-vw( 75 );
+            height: 0.35vw;
+            top   : 12.86vw;
+        }
+        @include m.pc {
+            width : 3.9vw;
+            height: 0.15vw;
+            top   : m.pc-vw( 189.5 );
+        }
+    }
+    //地図の上に被る文章
+    &__text {
+        padding        : 41.33vw 10.67vw  13.6vw 10.67vw;
+        line-height    : 2.357;
+        @include m.tablet {
+            font-size  : 1.19vw;
+            font-size  : m.tb-vw( 14 );
+            padding    : 15vw 3.47vw 7.3vw 5.03vw;
+        }  
+        @include m.pc {
+            font-size  : m.pc-vw( 16 );
+            padding    : 13.177vw 6.979vw 0 6.198vw;
+            line-height: 2.0625;  
+        }    
+    }
+}

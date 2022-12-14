@@ -1,0 +1,102 @@
+//ミックスイン
+@use "./../../foundation/mixin" as m;
+
+//front-page mein visualの基準と高さ設定
+.p-main-visual {
+    position  : relative;
+    height    : m.sp-vw( 331 );
+
+    @include m.tablet {
+        height: m.tb-vw( 285 );
+    }
+
+    //タイトルの余白設定
+    &__title {
+        display      : block;
+        font-size    : m.sp-vw( 36 );
+        position     : absolute;
+        top          : 42.73vw;
+        left         : m.sp-vw( 26 );
+
+        @include m.tablet {
+            font-size: m.tb-vw( 36 );
+            top      : 16vw;
+            left     : m.tb-vw( 36 );
+        }
+
+        @include m.pc {
+            display  : block;
+            font-size: m.pc-vw( 40 );
+            top      : 17.3vw;
+            left     : 4.479vw;
+        }
+    }
+}
+//archive-page main-visual
+.p-main-visual__archive {
+    position           : relative;
+    height             : m.sp-vw( 283 );
+    display            : flex;
+    flex-direction     : column;
+    justify-content    : center;
+    @include m.tablet {
+        height         : m.tb-vw( 283 );
+        flex-direction : row;
+        justify-content: flex-start;
+        align-items    : center;
+        @include m.pc {
+            height     : m.pc-vw( 239 );
+        }
+    }
+
+    &__title {
+        line-height        : 1.33;
+        margin-left        : m.sp-vw( 37 );
+        z-index            : 10;
+        @include m.tablet {
+            line-height    : 1.316;
+            margin-left    : m.tb-vw( 86 );
+            @include m.pc {
+                margin-left: m.pc-vw( 86 );
+            }
+        }
+    }
+
+    &__detail {
+        margin-left: m.sp-vw( 37 );
+        z-index        : 10;
+        @include m.tablet {
+            margin-left: m.tb-vw( 20 );
+            font-size  : m.tb-vw( 16 );
+        }
+        @include m.pc {
+            font-size  : m.pc-vw( 16 );
+        }
+    }
+}
+
+.p-main-visual__single {
+    position           : relative;
+    height             : m.sp-vw( 225 );
+    display            : flex;
+    flex-direction     : column;
+    justify-content    : center;
+    @include m.tablet {
+        height         : m.tb-vw( 500 );
+        // flex-direction : row;
+        // justify-content: flex-start;
+        // align-items    : center;
+        @include m.pc {
+            height     : m.pc-vw( 500 );
+        }
+    }
+    &--title {
+        margin-left        : m.sp-vw( 26 );
+        @include m.tablet {
+            margin-left    : m.tb-vw( 86 );
+            @include m.pc {
+                margin-left: m.pc-vw( 86 );
+            }
+        } 
+    }
+}

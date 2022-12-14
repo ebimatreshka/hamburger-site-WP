@@ -1,0 +1,55 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+@use "./../../foundation/mixin" as m;
+
+//タイトルの色指定
+.c-title {
+    &__white {
+        color: v.$color-white;
+    }
+    &__brown {
+        color: v.$color-brown;
+    }
+    &__dark-brown {
+        color: v.$color-dark-brown;
+    }
+}
+
+//タイトルのフォントサイズ指定
+.c-title {
+    &__42 {
+        color    : v.$color-white;
+        @extend .c-title__42;
+        font-size: 4.2vw;
+    }
+    &__41 {
+        @extend .c-title__42;
+        font-size: 10.93vw;
+        @include m.font-rem( 41 );
+    }
+    //archiveのmain-visualのtitleのfont
+    &__36 {
+        font-size    : m.sp-vw( 36 );
+        @include m.tablet {
+            font-size: m.tb-vw( 60 );
+            @include m.pc {
+                font-size: m.pc-vw( 60 );
+            }
+        }
+    }
+    &__22 {
+        @include m.font-rem( 22 );
+    }
+    &__02 {
+        @extend .c-title__42;
+        font-size: 2vw;
+    }
+    &__01 {
+        @extend .c-title__42;
+        font-size: 1vw;
+    }
+    &__007 {
+        @extend .c-title__42;
+        font-size: 0.7vw;
+    }
+}

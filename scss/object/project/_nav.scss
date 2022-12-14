@@ -1,0 +1,116 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//サイドバー
+.p-nav {
+    position  : relative;
+    overflow-x: hidden; //横スクロールバーを消す
+
+    //Menu,バーガー、サイド、ドリンクの余白設定
+    &__hamburger-btn-wrapper {
+        display    : block;
+        width      : m.sp-vw( 32 );
+        height     : m.sp-vw( 32 );
+        position   : absolute;
+        min-height : 8.53vw;
+        top        : 2vw;
+        left       : 74.5vw;   
+        @include m.tablet {
+            width  : m.tb-vw( 32 );
+            height : m.tb-vw( 32 );
+        }
+        @include m.pc {
+            display: none; //付け足したけどいるのかどうか？
+        }
+        //擬似要素で3本線作成
+        &::before,
+        &::after { 
+            content   : "";    //中身空っぽ
+            width     : m.sp-vw( 32 );
+            height    : 1vw;
+            position  : fixed;    //固定表示
+            top       : m.sp-vw( 25 );
+            right     : m.sp-vw( 17 );
+            display   : block;
+            background: v.$color-brown;
+            @include m.tablet {
+                width : m.tb-vw( 32 );
+                height: 0.5vw;
+                top   : m.tb-vw( 25 );
+                right : m.tb-vw( 25 );
+            }
+        }
+        //回転させて×ボタンへ
+        &::before {
+            top      : 5.5vw;
+            transform: rotate( 45deg);
+        }
+        &::after {
+            top      : 5.5vw;
+            transform: rotate( -45deg);
+        }
+    }
+    //ボタン表示のハコ
+    &__hamburger-btn-wrapper--btn {
+        display : block;
+        width   : m.sp-vw( 32 );
+        height  : m.sp-vw( 32 );
+        position: absolute;
+        top     : 1.9vw;
+        left    : m.sp-vw( 279 );
+    }
+    &__title {
+        padding-left      : m.sp-vw( 46 );
+        padding-bottom    : m.sp-vw( 25 );
+        @include m.tablet {
+            padding-left  : m.tb-vw( 46 );
+            font-size     : m.tb-vw( 24 );
+        }
+        @include m.pc {
+            padding-bottom: m.pc-vw( 40 );
+            padding-left  : m.pc-vw( 46 );
+            text-align    : left;
+            font-size     : m.pc-vw( 24 );
+            font-weight   : 700;
+        }
+    }
+    &__title--menu {
+        font-size      : m.sp-vw( 34 );
+        @include m.tablet {
+            font-size  : m.tb-vw( 34 );
+        }
+        @include m.pc {
+            font-size  : m.pc-vw( 34 );
+            font-weight: 700;
+        }
+    }
+
+    //ulの左の余白
+    &__ul {
+        padding-left    : m.sp-vw( 66 );
+        @include m.tablet {
+            padding-left: m.tb-vw( 66 );
+        }
+        @include m.pc {
+            padding-left: m.pc-vw( 66 );
+        }
+    }
+
+    //liの下の余白
+    &__li {
+        padding-bottom    : m.sp-vw( 23 );
+        @include m.tablet {
+            padding-bottom: m.tb-vw( 23 );
+        }
+        @include m.pc {
+            padding-bottom: m.pc-vw( 23 );
+        }
+    }
+}
+
+//
+.p-nav__hamburger-btn-wrapper.is-active {
+    display: none;
+}

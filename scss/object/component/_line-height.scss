@@ -1,0 +1,24 @@
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//line-height
+.c-LH--195 {
+    line-height: 1.95;
+}
+//archive cardのbutton
+.c-LH--106 {
+    line-height    : 1.0625;
+    @include m.pc {
+        line-height: 2.0625;
+    }
+}
+//single
+.c-LH14375 {
+    line-height: 1.4375;
+}
+.c-LH145 {
+    line-height: 1.45;
+}
+.c-LH15 {
+    line-height: 1.5;
+}

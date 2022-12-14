@@ -1,0 +1,48 @@
+//foundation
+@use "./foundation/base"; 
+@use "./foundation/mixin";
+@use "./foundation/variables";
+
+//layout
+@use "./layout/l.body";
+@use "./layout/l-container";
+@use "./layout/l-footer";
+@use "./layout/l-header";
+@use "./layout/l-main";
+@use "./layout/l-sidebar";
+
+//object/component
+@use "./object/component/background";
+@use "./object/component/border";
+@use "./object/component/button";
+@use "./object/component/color"; //文字色
+@use "./object/component/font";
+@use "./object/component/grid";
+@use "./object/component/image"; //画像
+@use "./object/component/line-height";
+@use "./object/component/opacity"; //透過
+@use "./object/component/pseudo-element"; //擬似要素
+@use "./object/component/round"; //角丸s
+@use "./object/component/text";
+@use "./object/component/title";
+@use "./object/component/unit"; //２カラム　flex-box
+
+//object/project
+@use "./object/project/article"; //single-pageの画像と記事の組み合わせ
+@use "./object/project/access"; //front-page地図
+@use "./object/project/blockquote"; //single-pageのblockquote
+@use "./object/project/brunch-menu"; //front-pageのTake Out/Eat In
+@use "./object/project/footer";
+@use "./object/project/header";
+@use "./object/project/list"; //single-pageのlist
+@use "./object/project/main";
+@use "./object/project/nav"; //サイドバー
+@use "./object/project/pagination"; //ページネーション
+@use "./object/project/search-form"; //検索ボックス
+@use "./object/project/section"; //archiveのsection
+@use "./object/project/table"; //single-pageの表
+
+//object/utility
+@use "./object/utility/margin";
+@use "./object/utility/padding"; //single-pageのlist
+@use "./object/utility/width"; //single-pageのtable左側

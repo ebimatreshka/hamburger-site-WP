@@ -1,0 +1,18 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+
+//テキストカラー
+.c-text {
+    &--white {
+        color: v.$color-white;
+    }
+    &--brown {
+        color: v.$color-brown;
+    }
+    &--dark-brown {
+        color: v.$color-dark-brown;
+    }
+    &--black {
+        color: v.$color-black;
+    }
+}

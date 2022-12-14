@@ -1,0 +1,42 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//フッター(基準設定)
+.p-footer {
+    position: relative;
+    //ショップ情報とヒストリー
+    //横並び
+    &__ul {
+        display      : flex;
+        margin       : 6.67vw auto 4.53vw;
+        @include m.tablet {
+            margin   : 0 auto;
+        }
+        @include m.pc {
+            font-size: 1vw;
+        }
+    }
+    &__menu__li {
+        @include m.tablet {
+            font-size: m.tb-vw( 20 );
+        }
+        @include m.pc {
+            font-size: 1vw;
+            font-size: m.pc-vw( 20 );
+        }
+    }
+    //コピーライトの真ん中中央揃え
+    &__copyright {
+        margin       : 0 auto;
+        @include m.tablet {
+            font-size: m.tb-vw( 14 );
+            margin   : 0 auto;
+        }
+        @include m.pc {
+            font-size: m.pc-vw( 14 );
+            margin   : 0 auto;
+        }    
+    }
+}

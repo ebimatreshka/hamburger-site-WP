@@ -1,0 +1,9 @@
+ //レスポンシブ
+@use "./../foundation/mixin" as m;
+
+ .l-main {
+    width: 100vw; //横幅いっぱい
+    @include m.pc {
+      width: 80vw;   //sidebarを除いた80%  
+   }
+}

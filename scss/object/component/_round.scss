@@ -1,0 +1,29 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//角丸
+.c-round {
+    &--63 {
+        border-radius: 6.3px;
+    } 
+    &--125 {
+        border-radius: 12.5px;
+    }
+    &--313 {
+        border-radius: 31.3px;
+    }
+    &--35 {
+        border-radius: 35px;
+    }
+    &--20 {
+        border-radius: m.sp-vw( 20 ); //single-pageのボタン
+        @include m.tablet {
+            border-radius: m.tb-vw( 20 );
+            @include m.pc {
+                border-radius: m.pc-vw( 20 );
+            }
+        }
+    }
+}

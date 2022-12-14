@@ -1,0 +1,46 @@
+@use "sass:math";
+
+//ブレイクポイント
+$tablet: 600px;
+$pc    : 1025px;
+
+//タブレットサイズ
+@mixin tablet {
+    @media screen and (min-width: $tablet) {
+        @content;
+    }
+}
+
+//PCサイズ
+@mixin pc {
+    @media screen and (min-width: $pc) {
+       @content; 
+    }
+}
+
+
+//rem(デザインカンプのpxをremに変換)　今回未使用
+@mixin font-rem( $font-size-px, $root-font-size: 16 ) {
+    font-size: math.div( $font-size-px, $root-font-size ) * 1rem;    
+}
+
+
+//vw(デザインカンプのpxをvwに変換)
+$sp-design-width: 375; //スマホデザインの幅 
+
+@function sp-vw($num, $width: $sp-design-width) {   //関数の宣言
+    @return(1vw * $num / $width * 100);
+}
+
+$tb-design-width: 834; //タブレットデザインの幅
+
+@function tb-vw($num, $width: $tb-design-width) {
+    @return(1vw * $num / $width * 100);
+}
+
+$pc-design-width: 1920; //PCデザインの幅
+
+@function pc-vw($num, $width: $pc-design-width) {
+    @return(1vw * $num / $width * 100);
+}
+

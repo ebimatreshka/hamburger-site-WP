@@ -1,0 +1,75 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+//ミックスイン
+@use "./../../foundation/mixin" as m;
+
+//検索ボックスと検索ボタン
+//横並び
+.p-search-form {
+    display: flex;  
+    position: relative;  //虫眼鏡入れるため
+
+    //虫眼鏡の画像を擬似要素で
+    &::before {
+        content      : \f002;
+        font-family  : "Font Awesome 5 Free";
+        font-weight  : 700;
+        font-size    : 5vw;
+        display      : block;
+        line-height  : 1px; //上下の余白が消えるため、高さが揃う仕組み(0pxでもOK)
+        margin       : 6.5vw -7.27vw 0 0;
+        z-index      : 10;
+        @include m.tablet {
+            font-size: 3vw;
+            margin   : 3vw -4.68vw 0 0;
+        }
+        @include m.pc {
+            font-size: 1.5vw;
+            margin   : 1.3vw -2.5vw 0 0;
+        }
+    }
+
+    //検索ボックスの色、幅、高さ、余白定義
+    &__keyword {
+        background-color: v.$color-white;
+        width           : m.sp-vw( 230, 375 );
+        height          : m.sp-vw( 46, 375 );
+        padding-left    : 10vw;
+        @include m.tablet {
+            width       : m.tb-vw( 396 );
+            height      : m.tb-vw( 46 );
+            padding-left: 5.515vw;
+        }
+        @include m.pc {
+            width       : m.pc-vw( 396 );
+            height      : m.pc-vw( 46 );
+            padding-left: 3vw;
+        }
+    }
+
+    //検索ボタンの色、幅、高さ、余白定義
+    &__submit {
+        background-color: v.$color-bg-lightgray;
+        width           : m.sp-vw( 78 );
+        height          : m.sp-vw( 46 );
+        margin-left     : m.sp-vw( 12 );
+        font-size       : m.sp-vw( 16 );
+        color           : v.$color-brown;
+
+        @include m.tablet {
+            width       : m.tb-vw( 136 );
+            height      : m.tb-vw( 46 );
+            margin-left : 1.2vw;
+            margin-left : m.tb-vw( 14 );
+            font-size   : 0.8vw;     
+            font-size   : m.tb-vw( 16 );
+        }
+        @include m.pc {
+            margin      : 0 1.61vw 0 0.67vw;   
+            width       : 7vw;
+            width       : m.pc-vw( 136 );
+            height      : m.pc-vw( 46 );
+            font-size   : m.pc-vw( 16 );
+        }
+    }
+}

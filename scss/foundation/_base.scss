@@ -1,0 +1,35 @@
+@use "./variables" as v;
+
+* {
+    box-sizing: border-box;
+}
+
+html {  //html幅があってもなくてもいい人
+    font-size      : 16px; 
+    line-height    : 1.6em;   //単位emをチェックする
+    scroll-behavior: smooth;
+}
+
+body {
+    color     : v.$color-brown;
+    width     : 100vw;  //htmlに頼らない幅をつける
+    overflow-x: hidden;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color          : v.$color-brown;
+}
+
+img {
+    max-width: 100%;
+    height   : auto;
+    border   : none;
+    display  : block;
+}
+
+

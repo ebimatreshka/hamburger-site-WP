@@ -1,0 +1,50 @@
+//ミックスイン
+@use "./../../foundation/mixin" as m;
+
+//ヘッダー
+.p-header {
+    
+    //hamburgerの文字のサイズと左の余白
+    &__title {
+        font-weight       : 900;
+        line-height       : 1.325;
+        font-size         : m.sp-vw( 40 );
+        padding-bottom    : m.sp-vw( 38 );
+
+        @include m.tablet {
+            font-size     : m.tb-vw( 40 );
+            padding-bottom: m.tb-vw( 38 );
+        }
+        @include m.pc {
+            margin-left   : m.pc-vw( 65 );
+            font-size     : 3.3vw;
+            font-size     : m.pc-vw( 64 );
+            padding-bottom: 0;
+        }
+        &--menu {
+            display        : block;
+            font-size      : m.sp-vw( 20 );
+            font-weight    : 700;
+            position       : absolute;
+            top            : m.sp-vw( 14 );
+            left           : m.sp-vw( 308 );
+
+            @include m.tablet {
+                display    : block;
+                font-size  : m.tb-vw( 34 );
+                line-height: 1.3235;
+                font-weight: 600;
+                position   : absolute;
+                top        : 3vw;
+                left       : 87vw;
+            }
+            @include m.pc {
+                display    : none;
+            }
+        }
+    }
+}
+
+.p-header__title--menu.is-active {
+    display: none;
+}

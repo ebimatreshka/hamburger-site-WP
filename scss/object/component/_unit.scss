@@ -1,0 +1,36 @@
+@use "./../../foundation/mixin" as m;
+
+//2カラムのレイアウト
+//front-page article
+.c-unit {
+    &--2col {
+        display:         flex;
+        justify-content: space-between;
+        flex-direction: column;
+        @include m.tablet {
+            flex-direction: row;
+            // align-items: center;
+        }
+        @include m.pc {
+            justify-content: space-between;
+        }
+    }
+}
+
+//flex-boxの定義
+.c-flex-box {
+    //縦並び
+    &--column {
+        display        : flex;
+        flex-direction : column;
+        justify-content: center;
+        align-items    : center;
+        position: relative;
+
+        // pc1025px(横並び 左右に均等配置)
+        @include m.pc {
+            justify-content: space-between;
+            flex-direction : row;        
+        }
+    }
+}

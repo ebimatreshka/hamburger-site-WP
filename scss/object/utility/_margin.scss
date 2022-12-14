@@ -1,0 +1,113 @@
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+.u-margin__title--menu {
+    display: none;
+    @include m.pc {
+        display: block;
+        margin-top: m.pc-vw( 82 );
+        margin-bottom: m.pc-vw( 85 );
+        text-align: start;
+        padding-left: m.pc-vw( 46 );
+    }
+}
+
+.u-margin__T130 {
+    margin-top    : m.sp-vw( 212 );
+    @include m.tablet {
+        margin-top: m.tb-vw( 212 );
+    }
+    @include m.pc {
+        margin-top: 0;
+    }
+}
+
+.u-margin__T11 {
+    margin-top        : m.sp-vw( 11 );
+    @include m.pc {
+        margin-top    : m.pc-vw( 11 );
+        padding-bottom: m.pc-vw( 39 );
+    }
+}
+
+.u-margin__T18 {
+    margin-top        : m.sp-vw( 18 );
+    @include m.pc {
+        margin-top    : m.pc-vw( 18 );
+        padding-bottom: m.pc-vw( 38 );
+    }
+}
+
+//paginationの前へ
+.u-margin__L82 {
+    margin-left : m.sp-vw( 8.2 );
+    margin-right: m.sp-vw( 220 );
+}
+
+.u-margin__R173 {
+    margin-right: m.sp-vw( 7.3 );
+}
+//paginationのpage1/10
+.u-margin__R193 {
+    @include m.tablet {
+        margin-right    : m.tb-vw( 5.3 );
+        @include m.pc {
+            margin-right: m.pc-vw( 19.3 );
+        }
+    }
+}
+//singleのp
+// .u-margin__L50 {
+//     margin-left: m.pc-vw( 50 );
+// }
+//真ん中中央寄せ
+.u-margin__0 {
+    margin: 0 auto;
+}
+//single-page下に
+.u-margin__B30 {
+    margin-bottom: m.sp-vw( 30 );
+    @include m.tablet {
+        margin-bottom: m.tb-vw( 61 );
+        @include m.pc {
+            margin-bottom: m.pc-vw( 60 );
+        }
+    }
+}
+
+//single-page listの間
+.u-margin__B20 {
+    margin-bottom: m.sp-vw( 20 );
+    @include m.tablet {
+        margin-bottom: m.tb-vw( 20 );
+        @include m.pc {
+            margin-bottom: m.pc-vw( 20 );
+        }
+    }
+}
+
+.u-margin__L34 {
+    margin-left: m.sp-vw( 18 );
+    @include m.tablet {
+        margin-left: m.tb-vw( 18 );
+        @include m.pc {
+            margin-left: m.pc-vw( 18 );
+        }
+    }
+}
+//single-page 一番下の<p>
+.u-margin__L20 {
+    margin-top: m.sp-vw( 30 );
+    margin-bottom: m.sp-vw( 177 );
+    margin-left: m.sp-vw( 20 );
+    @include m.tablet {
+        margin-top: m.tb-vw( 60 );
+        margin-bottom: m.tb-vw( 228 );
+        margin-left: m.tb-vw( 60 );
+        @include m.pc {
+            margin-top: m.pc-vw( 60 );
+            margin-bottom: m.pc-vw( 353 );
+            margin-left: m.pc-vw( 100 );
+        }
+    }
+}

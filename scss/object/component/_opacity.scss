@@ -1,0 +1,12 @@
+//透過component 未使用
+.c-opacity {
+    &--60per {
+        opacity: 60%;
+    }
+    &--50per {
+        opacity: 50%;
+    }
+    &--29per {
+        opacity: 29%;
+    }
+}

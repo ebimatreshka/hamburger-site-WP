@@ -1,0 +1,30 @@
+//色指定
+@use "./../../foundation/variables" as v;
+
+//未使用
+.c-border {
+    border: 1px solid v.$color-brown;
+}
+
+//未使用
+.c-underline {
+    width        : 3.3vw;
+    border-bottom: 3.3vw solid v.$color-white;
+}
+
+//footerの仕切り(ショップ情報とヒストリーの間)
+.c-border__footer--li {
+    display     : block;
+    border-right: solid white;
+    padding     : 0 10px;
+}
+
+//footerの仕切りの非表示(ヒストリーの横)
+.c-border__footer {
+    border-right: none;
+}
+
+//single-page table
+.c-border__table {
+    border: solid 1px;
+}

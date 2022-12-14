@@ -1,0 +1,109 @@
+//色指定
+@use "./../../foundation/variables" as v;
+//レスポンシブ
+@use "./../../foundation/mixin" as m;
+
+//google fonts
+.c-font {
+    &__M--regular {
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: 400;
+        }
+    &__M--bold {
+        font-family: 'M PLUS 1p', sans-serif;
+        font-weight: 700;
+        }
+    &__R {
+        font-family: 'Roboto', sans-serif;
+        } 
+    &__R--bold {
+        font-family: 'Roboto', sans-serif;
+        font-weight: bold;
+    }   
+}
+
+//フォントサイズ
+.c-font-size {
+    &__14 {
+        //未使用
+        font-size    : 3.73vw;
+        font-size    : m.sp-vw( 14 );
+    }
+    &__13 {
+        font-size    : 5.87vw;
+    }
+    //archiveのcardの小見出しとボタンの文字
+    //singleのpタグテキスト
+    &__16 {
+        font-size        : m.sp-vw( 16 );
+        @include m.tablet {
+            font-size    : m.tb-vw( 16 );
+            @include m.pc {
+                font-size: m.pc-vw( 16 );
+            }
+        }
+    }
+    //sidebarのメニューの文字サイズ,archiveのcardのtitle
+    &__20 {
+        font-size    : m.sp-vw( 20 );
+        @include m.tablet {
+            font-size: m.tb-vw( 20 );
+        }
+        @include m.pc {
+            font-size: m.pc-vw( 20 );
+        }
+    }
+    &__22 {
+        font-size    : 2.2vw;
+    }
+    &__24--sidebar-title {
+        font-size        : m.sp-vw( 24 );
+        @include m.tablet {
+            font-size    : m.tb-vw( 24 );
+            @include m.pc {
+                font-size: m.pc-vw( 24 );
+            }
+        }
+    }
+    &__24 {
+        font-size    : 2.07vw;
+    }
+    &__28 {
+        font-size: m.sp-vw( 28 );
+    }
+    &__30 {
+        font-size    : 8vw;
+    }
+    &__36 {
+        font-size: m.sp-vw( 36 ); //archiveのmainのtitleで使用
+    }
+    //single-page h2
+    &__28--single-h2 {
+        font-size: m.sp-vw( 28 );
+        @include m.tablet {
+            font-size: m.tb-vw( 36 );
+            @include m.pc {
+                font-size: m.pc-vw( 36 );
+            }
+        
+        }
+    }
+    &__24--single-h3 {
+        font-size: m.sp-vw( 24 );
+        @include m.tablet {
+            font-size: m.tb-vw( 28 );
+            @include m.pc {
+                font-size: m.pc-vw( 28 );
+            }
+        }
+    }
+    &__20--single-h4-6 {
+        font-size: m.sp-vw( 20 );
+        @include m.tablet {
+            font-size: m.tb-vw( 20 );
+            @include m.pc {
+                font-size: m.pc-vw( 20 );
+            }
+        }
+    }
+}    

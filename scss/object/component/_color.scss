@@ -1,0 +1,21 @@
+//文字色指定
+@use "./../../foundation/variables" as v;
+@use "./../../foundation/mixin" as m;
+
+.c-color {
+    &__white {
+        color: v.$color-white;
+    }
+    &__brown {
+        color: v.$color-brown;
+    }
+    &__dark-brown {
+        color: v.$color-dark-brown;
+    }
+    &__black {
+        color: v.$color-black;
+    }
+    &__blue {
+        color: v.$color-blue;
+    }
+}
