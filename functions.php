@@ -37,7 +37,7 @@ function hamburger_script() {
     //script読み込み
     // wp_enqueue_script( "script",get_template_directory_uri()."/js/script.js",array( "jQuery" ), false );
 }
-
+//jQuery読み込み
 function custom_print_scripts() {
 	if (!is_admin()) {
 		//デフォルトjquery削除
@@ -47,6 +47,13 @@ function custom_print_scripts() {
 		wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js' );
 	}
 }
+//faviconの読み込み
+function setup_favicon() {
+	echo '<link rel="icon" href="' . get_template_directory_uri() . '/favicon.ico">' . "\n";
+}
+add_action('wp_head', 'setup_favicon');
+add_action('login_head', 'setup_favicon');
+add_action('admin_head', 'setup_favicon');
 
 //実行
 add_action( "wp_enqueue_scripts","hamburger_script" );
