@@ -30,3 +30,5 @@
                 <!-- searchform.phpを呼び出すテンプレートタグ -->
                 <?php get_search_form(); ?>
         </header>
+
+        
