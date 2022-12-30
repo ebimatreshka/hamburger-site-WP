@@ -1,5 +1,5 @@
         <!--sidebar-->
-        <article class="l-sidebar c-grid__sidebar">
+        <!-- <article class="l-sidebar c-grid__sidebar">
             <nav class="p-nav">
                 <p class="p-nav__hamburger-btn-wrapper">
                     <a class="p-nav__hamburger-btn-wrapper--btn c-text--brown" href=""></a>
@@ -38,4 +38,8 @@
                     </ul>
                 </div>
             </nav>
-        </article>
+        </article> -->
+
+<!-- ナビゲーションメニュー読み込み -->
+<?php wp_nav_menu( 
+    array( "menu" => "categorymenu" )); ?>

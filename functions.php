@@ -1,6 +1,11 @@
 <?php
 //テーマサポート
 add_theme_support( "title-tag" );
+//メニュー(sidebar)
+add_theme_support( 'menus' );
+//アイキャッチ画像
+add_theme_support( "post-thumbnails" );
+
 //タイトル出力
 function hamburger_title( $title ) {
     if( is_front_page() && is_home()) {
@@ -14,12 +19,35 @@ add_filter( "pre_get_document_title","hamburger_title");
 
 // 宣言
 function hamburger_script() {
+    //Google Fonts読み込み
     wp_enqueue_style( "google-font","//fonts.googleapis.com", array() );
+    //M+PLUS+1p Roboto読み込み
     wp_enqueue_style( "M+PLUS+1p","//fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@400;700&display=swap", array() );
+    //Font Awesome読み込み
+    wp_enqueue_style( "font-awesome","//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",array(),"5.15.4" );
+    //ress.css読み込み
+    wp_enqueue_style( "ress",get_template_directory_uri()."//unpkg.com/ress/dist/ress.min.css",array() );
+    //cssフォルダの中のstyle.css読み込み
+    wp_enqueue_style( "css",get_template_directory_uri()."/css/style.css",array() ); 
+    //style.css読み込み
+    wp_enqueue_style( "style-css",get_template_directory_uri()."/style.css",array() );
 
-    // <link rel="stylesheet" href="https://unpkg.com/ress/dist/ress.min.css">
-    wp_enqueue_style( "ress","//unpkg.com/ress/dist/ress.min.css",array() );
-    // <link rel="stylesheet" href="./css/style.css">
+    //jQuery読み込み
+    // wp_enqueue_script( "jQuery","https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js");
+    //script読み込み
+    // wp_enqueue_script( "script",get_template_directory_uri()."/js/script.js",array( "jQuery" ), false );
 }
+
+function custom_print_scripts() {
+	if (!is_admin()) {
+		//デフォルトjquery削除
+		wp_deregister_script('jquery');
+
+		//GoogleCDNから読み込む
+		wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js' );
+	}
+}
+
 //実行
 add_action( "wp_enqueue_scripts","hamburger_script" );
+add_action('wp_print_scripts', 'custom_print_scripts');
