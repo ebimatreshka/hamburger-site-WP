@@ -7,6 +7,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="サイトの説明文が入ります">
 
+    <?php
+	wp_deregister_script('jquery');
+	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0');
+	?>
+
+<?php wp_enqueue_script('jQuery-js', '/wp-content/themes/hamburger-site/scss/js/script.js'); ?>
     <!-- WPのテーマに含める関数 -->
     <?php wp_head(); ?>
 </head>
