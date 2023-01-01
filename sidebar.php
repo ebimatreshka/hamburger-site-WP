@@ -1,10 +1,10 @@
         <!--sidebar-->
-        <!-- <article class="l-sidebar c-grid__sidebar">
+        <article class="l-sidebar c-grid__sidebar">
+            <p class="p-nav__hamburger-btn-wrapper">
+                <a class="p-nav__hamburger-btn-wrapper--btn c-text--brown" href=""></a>
+            </p>
+            <button class="p-nav__title--menu u-margin__title--menu c-text--brown c-font__R">Menu</button>
             <nav class="p-nav">
-                <p class="p-nav__hamburger-btn-wrapper">
-                    <a class="p-nav__hamburger-btn-wrapper--btn c-text--brown" href=""></a>
-                </p>
-                <button class="p-nav__title--menu u-margin__title--menu c-text--brown c-font__R">Menu</button>
                 <div>
                     <h3 class="p-nav__title u-margin__T130 c-font__M--bold">バーガー</h3>
                     <ul class="p-nav__ul c-font__M--regular LH--195">
@@ -38,8 +38,15 @@
                     </ul>
                 </div>
             </nav>
-        </article> -->
+        </article>
 
 <!-- ナビゲーションメニュー読み込み -->
-<?php wp_nav_menu( 
-    array( "menu" => "categorymenu" )); ?>
+<!-- <?php
+    wp_nav_menu( 
+        array(
+            "menu" => "categorymenu",
+            "container" => "nav",
+            // "menu_class" => "p-nav"
+        )
+    );
+?> -->

@@ -1,10 +1,27 @@
 <?php
-//テーマサポート(タイトルタグのサポートを許可)
-add_theme_support( "title-tag" );
-//メニュー(sidebar)
-add_theme_support( 'menus' );
-//アイキャッチ画像
+//テーマの設定
+function custom_theme_support() {
+    //吐き出されるコードをデフォルトのHTMXからHTML5に変更
+    add_theme_support("html5", array (
+        "search-form",
+        "comment-form",
+        "comment-list", //隠れたコメントを表示
+        "gallery",
+        "caption", //galleryで使うキャプション
+    ));
+//アイキャッチ画像の有効化
 add_theme_support( "post-thumbnails" );
+//テーマサポート(管理画面からタイトルタグ登録可能)
+add_theme_support( "title-tag" );
+//カスタムメニューの有効化(sidebar)
+add_theme_support( 'menus' ); //menusとsをつけると複数登録できる
+register_nav_menus( array(
+    "footer_nav" => esc_html__( "footer navigation","rtbread" ),
+    "category_nav" => esc_html__( "category navigation", "rtbread" ),
+));
+}
+//実行
+add_action( "after_setup_theme","custom_theme_support" );
 
 //タイトル出力
 function hamburger_title( $title ) {
@@ -20,23 +37,21 @@ add_filter( "pre_get_document_title","hamburger_title");
 
 // 宣言
 function hamburger_script() {
-    //Google Fonts読み込み
-    // wp_enqueue_style( "google-font","https://fonts.googleapis.com", array() );
+    //ress.css読み込み
+    wp_enqueue_style( "ress","//unpkg.com/ress/dist/ress.min.css",array(),"" );
     //M+PLUS+1p Roboto読み込み
-    wp_enqueue_style( "M+PLUS+1p","https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@400;700&display=swap", array() );
+    wp_enqueue_style( "M+PLUS+1p","https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@400;700&display=swap", array(),"" );
     //Font Awesome読み込み
     wp_enqueue_style( "font-awesome","//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css",array(),"5.15.4" );
-    //ress.css読み込み
-    wp_enqueue_style( "ress","//unpkg.com/ress/dist/ress.min.css",array() );
-    //cssフォルダの中のstyle.css読み込み
-    wp_enqueue_style( "css",get_template_directory_uri()."/css/style.css",array() ); 
+    //cssフォルダの中のstyle.css読み込み(スタイリングを反映させるため)
+    wp_enqueue_style( "css",get_template_directory_uri()."/css/style.css",array(),"" ); 
     //style.css読み込み
-    wp_enqueue_style( "style-css",get_template_directory_uri()."/style.css",array() );
+    wp_enqueue_style( "style-css",get_template_directory_uri()."/style.css",array(),"" );
 
     //jQuery読み込み
-    // wp_enqueue_script( "jQuery","https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js");
+    // wp_enqueue_script( "jQuery","https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js","","",true);
     //script読み込み
-    // wp_enqueue_script( "script",get_template_directory_uri()."/js/script.js",array( "jQuery" ), false );
+    // wp_enqueue_script( "script",get_template_directory_uri()."/js/script.js","jQuery","",true );
 }
 //動かないのでheader.phpに読み込ませた
 // //jQuery読み込み
