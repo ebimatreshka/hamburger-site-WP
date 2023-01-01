@@ -55,11 +55,11 @@ function hamburger_script() {
 //実行
 add_action( "wp_enqueue_scripts","hamburger_script" );
 
-//faviconの読み込み
-function setup_favicon() {
-	echo '<link rel="icon" href="' . get_template_directory_uri() . '/favicon.ico">' . "\n";
-}
-//実行
-add_action('wp_head', 'setup_favicon');
-add_action('login_head', 'setup_favicon');
-add_action('admin_head', 'setup_favicon');
+// ファビコンを読み込ませる　できなくなった
+// function setup_favicon() {
+// 	echo '<link rel="icon" href="' . get_template_directory_uri() . '/favicon.ico">' . "\n";
+// }
+// //実行
+// add_action('wp_head', 'setup_favicon');
+// add_action('login_head', 'setup_favicon');
+// add_action('admin_head', 'setup_favicon');
