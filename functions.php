@@ -47,11 +47,10 @@ function hamburger_script() {
     wp_enqueue_style( "css",get_template_directory_uri()."/css/style.css",array(),"" ); 
     //style.css読み込み
     wp_enqueue_style( "style-css",get_template_directory_uri()."/style.css",array(),"" );
-
     //jQuery読み込み
-    // wp_enqueue_script( "jQuery","https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js","","",true);
+    wp_enqueue_script( "jQuery","https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js","","",true);
     //script読み込み
-    // wp_enqueue_script( "script",get_template_directory_uri()."/js/script.js","jQuery","",true );
+    wp_enqueue_script( "script",get_template_directory_uri()."/js/script.js","jQuery","",true );
 }
 //動かないのでheader.phpに読み込ませた
 // //jQuery読み込み
@@ -78,3 +77,12 @@ add_action( "wp_enqueue_scripts","hamburger_script" );
 // add_action('wp_head', 'setup_favicon');
 // add_action('login_head', 'setup_favicon');
 // add_action('admin_head', 'setup_favicon');
+
+//ウィジェット機能の有効化
+function my_theme_widgets_init() {
+    register_sidebar( array(
+      'name' => 'Main Sidebar',
+      'id' => 'main-sidebar',
+    ) );
+  }
+  add_action( 'widgets_init', 'my_theme_widgets_init' );
