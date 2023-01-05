@@ -41,13 +41,13 @@
         </article>
 
 <!-- ナビゲーションメニュー読み込み -->
-//管理画面の外観のメニューを表示
+<!-- 管理画面の外観のメニューを表示 -->
 <!-- <?php
     wp_nav_menu( 
         array(
             "menu" => "categorymenu",
             "container" => "nav",
-            // "menu_class" => "p-nav"
+            "menu_class" => "",
         )
     );
 ?> -->

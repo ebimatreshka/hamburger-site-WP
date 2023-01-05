@@ -8,7 +8,7 @@
     <meta name="description" content="サイトの説明文が入ります">
 
     
-    
+    <!-- functionsでjqueryを読まなかった時の為のコード -->
     <!-- <?php
 	wp_deregister_script('jquery');
 	wp_enqueue_script('jquery', 'https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js', array(), '3.6.0');
