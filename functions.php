@@ -16,8 +16,8 @@ add_theme_support( "title-tag" );
 //カスタムメニューの有効化(sidebar)
 add_theme_support( 'menus' ); //menusとsをつけると複数登録できる
 register_nav_menus( array(
-    "footer_nav" => esc_html__( "footer navigation","rtbread" ),
-    "category_nav" => esc_html__( "category navigation", "rtbread" ),
+    "footer-menu" => "フッター",
+    "sidebar-menu" => "サイドメニュー",
 ));
 }
 //実行

@@ -487,7 +487,8 @@ img {
     grid-template-rows: 1fr 1fr 1fr 1fr 1fr;
     grid-template-columns: 1fr 1fr;
     row-gap: 1.9184652278vw;
-    column-gap: 2.3980815348vw;
+    -moz-column-gap: 2.3980815348vw;
+         column-gap: 2.3980815348vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
@@ -499,8 +500,10 @@ img {
 }
 
 .c-image__single--big {
-  object-fit: cover;
-  object-position: 100% 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 100%;
+     object-position: 100% 100%;
   width: 89.3333333333vw;
   height: 33.0666666667vw;
 }
@@ -1408,18 +1411,18 @@ img {
   top: 1.9vw;
   left: 74.4vw;
 }
-.p-nav__title {
+.p-nav__title, .p-nav .menu-item-type-taxonomy {
   padding-left: 12.2666666667vw;
   padding-bottom: 6.6666666667vw;
 }
 @media screen and (min-width: 600px) {
-  .p-nav__title {
+  .p-nav__title, .p-nav .menu-item-type-taxonomy {
     padding-left: 5.51558753vw;
     font-size: 2.8776978417vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-nav__title {
+  .p-nav__title, .p-nav .menu-item-type-taxonomy {
     padding-bottom: 2.0833333333vw;
     padding-left: 2.3958333333vw;
     text-align: left;
@@ -1657,7 +1660,8 @@ img {
 @media screen and (min-width: 600px) {
   .p-section__card__image--blue {
     height: 42.5059952038vw;
-    object-fit: cover;
+    -o-object-fit: cover;
+       object-fit: cover;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {

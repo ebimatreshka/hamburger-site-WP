@@ -61,7 +61,7 @@
         top     : 1.9vw;
         left    : m.sp-vw( 279 );
     }
-    &__title {
+    &__title,.menu-item-type-taxonomy {
         padding-left      : m.sp-vw( 46 );
         padding-bottom    : m.sp-vw( 25 );
         @include m.tablet {
