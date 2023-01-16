@@ -6,13 +6,14 @@
             </ul>
             <small class="p-footer__copyright c-font__M--regular c-font-size__14">Copyright: RaiseTech</small>
         </footer>
-    </div>
+        </div>
 
-    <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+        <!-- <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
     <script src="scss/js/script.js"></script> -->
 
-    
-    <?php wp_footer(); ?>
-    
-</body>
-</html>
+        <!-- WPのテーマに含める関数(必須のテンプレートタグ) -->
+        <?php wp_footer(); ?>
+
+        </body>
+
+        </html>

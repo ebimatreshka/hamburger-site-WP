@@ -42,7 +42,11 @@
 @use "./object/project/section"; //archiveのsection
 @use "./object/project/table"; //single-pageの表
 
+//wp
+@use "./object/wp/wp"; //wp用
+
 //object/utility
 @use "./object/utility/margin";
 @use "./object/utility/padding"; //single-pageのlist
 @use "./object/utility/width"; //single-pageのtable左側
+

@@ -1939,6 +1939,19 @@ img {
   }
 }
 
+.menu-item.menu-item-type-post_type.menu-item-object-post {
+  font-weight: 400;
+}
+@media screen and (min-width: 1025px) {
+  .menu-item.menu-item-type-post_type.menu-item-object-post {
+    padding-bottom: 1.1979166667vw;
+  }
+}
+
+.menu-item.menu-item-type-post_type.menu-item-object-post a {
+  padding-bottom: 2.0833333333vw;
+}
+
 .u-margin__title--menu {
   display: none;
 }

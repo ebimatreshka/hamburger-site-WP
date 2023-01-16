@@ -1,0 +1,23 @@
+//色指定
+@use "./../../foundation/variables" as v;
+//ミックスイン
+@use "./../../foundation/mixin" as m;
+
+//front-page
+//sidebar
+//文字間隔.p-nav__li
+.menu-item.menu-item-type-post_type.menu-item-object-post {
+    // padding-bottom    : m.sp-vw( 23 );
+    // @include m.tablet {
+    //     padding-bottom: m.tb-vw( 23 );
+    // }
+    font-weight: 400;
+    @include m.pc {
+        padding-bottom: m.pc-vw( 23 );
+    }
+}
+.menu-item.menu-item-type-post_type.menu-item-object-post {
+    a {
+        padding-bottom: 2.0833333333vw;
+    }
+}
