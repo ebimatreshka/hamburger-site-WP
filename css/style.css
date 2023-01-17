@@ -1939,6 +1939,10 @@ img {
   }
 }
 
+ul.sub-menu {
+  padding-left: 1vw;
+}
+
 .menu-item.menu-item-type-post_type.menu-item-object-post {
   font-weight: 400;
 }

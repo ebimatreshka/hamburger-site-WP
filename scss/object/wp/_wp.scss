@@ -5,6 +5,10 @@
 
 //front-page
 //sidebar
+//メニュー名を右へ
+ul.sub-menu {
+    padding-left: 1vw;
+}
 //文字間隔.p-nav__li
 .menu-item.menu-item-type-post_type.menu-item-object-post {
     // padding-bottom    : m.sp-vw( 23 );
@@ -14,10 +18,5 @@
     font-weight: 400;
     @include m.pc {
         padding-bottom: m.pc-vw( 23 );
-    }
-}
-.menu-item.menu-item-type-post_type.menu-item-object-post {
-    a {
-        padding-bottom: 2.0833333333vw;
     }
 }
