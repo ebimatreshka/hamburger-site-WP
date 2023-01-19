@@ -1969,6 +1969,15 @@ div[class=menu] > ul > li a {
   color: #FFFFFF;
 }
 
+.page_item.page-item-19 {
+  border-right: 1px solid #FFFFFF;
+  padding: 2px 8px;
+}
+
+.page_item.page-item-79 {
+  padding: 2px 8px;
+}
+
 .u-margin__title--menu {
   display: none;
 }
