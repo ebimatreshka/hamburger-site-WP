@@ -1952,8 +1952,11 @@ ul.sub-menu {
   }
 }
 
-.menu-item.menu-item-type-post_type.menu-item-object-post a {
-  padding-bottom: 2.0833333333vw;
+@media screen and (min-width: 1025px) {
+  .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
+    display: inline-block;
+    margin-bottom: 2.0833333333vw;
+  }
 }
 
 .u-margin__title--menu {

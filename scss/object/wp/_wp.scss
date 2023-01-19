@@ -20,3 +20,10 @@ ul.sub-menu {
         padding-bottom: m.pc-vw( 23 );
     }
 }
+
+.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
+    @include m.pc {
+        display: inline-block;
+        margin-bottom: m.pc-vw( 40 );
+    }
+}
