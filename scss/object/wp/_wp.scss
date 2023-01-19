@@ -4,31 +4,67 @@
 @use "./../../foundation/mixin" as m;
 
 //front-page
+h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
+    content: '';
+    display: inline-block;
+    background-color: v.$color-white;
+    position: absolute;
+    width     : 9.03vw;
+    height    : 6.5px;
+    height    : 1.2vw;
+    top       : 19vw;
+    left      : 4vw;
+    @include m.tablet {
+        width : m.tb-vw( 35.99 );
+        height: m.tb-vw( 3.5 );
+        top   : 11.913vw;
+        left  : 1.4vw;
+        left  : m.tb-vw( 15.1 );
+    }
+    @include m.pc {
+        width : m.pc-vw( 63 );
+        height: 0.25vw;
+        top   : 8vw;
+    }
+}
+
 //sidebar
 //メニュー名を右へ
 ul.sub-menu {
     padding-left: 1vw;
 }
+
+.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-14 {
+    margin-top: m.sp-vw( 212 );
+    @include m.tablet {
+        margin-top: m.tb-vw( 212 );
+    }
+    @include m.pc {
+        margin: 0;
+    }
+}
+
 //文字間隔.p-nav__li
 .menu-item.menu-item-type-post_type.menu-item-object-post {
-    // padding-bottom    : m.sp-vw( 23 );
-    // @include m.tablet {
-    //     padding-bottom: m.tb-vw( 23 );
-    // }
     font-weight: 400;
     @include m.pc {
         padding-bottom: m.pc-vw( 23 );
     }
 }
+
 //バーガー、サイド、ドリンクのmargin
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
     margin-bottom    : m.sp-vw( 25 );
+    font-size: m.sp-vw( 24 );
+    font-family: "M PLUS 1p", sans-serif;
+    font-weight: 700;
     @include m.tablet {
-        // padding-left  : m.tb-vw( 46 );
+        font-size     : m.tb-vw( 24 );
     }
     @include m.pc {
         display: inline-block;
         margin-bottom: m.pc-vw( 40 );
+        font-size     : m.pc-vw( 24 );
     }
 }
 
@@ -41,7 +77,7 @@ div[class="menu"] > ul {
         color: v.$color-white;
     }
 }
-
+//ショップ情報とヒストリーの間に縦線
 .page_item.page-item-19 {
     border-right: 1px solid v.$color-white;
     padding: 2px 8px;

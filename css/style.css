@@ -141,7 +141,7 @@ img {
 }
 
 .l-sidebar.is-open {
-  overflow: scroll;
+  overflow: hidden;
   right: 0;
   visibility: visible;
   opacity: 1;
@@ -1939,8 +1939,50 @@ img {
   }
 }
 
+h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
+  content: "";
+  display: inline-block;
+  background-color: #FFFFFF;
+  position: absolute;
+  width: 9.03vw;
+  height: 6.5px;
+  height: 1.2vw;
+  top: 19vw;
+  left: 4vw;
+}
+@media screen and (min-width: 600px) {
+  h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
+    width: 4.3153477218vw;
+    height: 0.4196642686vw;
+    top: 11.913vw;
+    left: 1.4vw;
+    left: 1.8105515588vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
+    width: 3.28125vw;
+    height: 0.25vw;
+    top: 8vw;
+  }
+}
+
 ul.sub-menu {
   padding-left: 1vw;
+}
+
+.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-14 {
+  margin-top: 56.5333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-14 {
+    margin-top: 25.4196642686vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-14 {
+    margin: 0;
+  }
 }
 
 .menu-item.menu-item-type-post_type.menu-item-object-post {
@@ -1954,11 +1996,20 @@ ul.sub-menu {
 
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
   margin-bottom: 6.6666666667vw;
+  font-size: 6.4vw;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+}
+@media screen and (min-width: 600px) {
+  .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
+    font-size: 2.8776978417vw;
+  }
 }
 @media screen and (min-width: 1025px) {
   .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
     display: inline-block;
     margin-bottom: 2.0833333333vw;
+    font-size: 1.25vw;
   }
 }
 

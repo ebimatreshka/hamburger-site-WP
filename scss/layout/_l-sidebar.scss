@@ -32,7 +32,7 @@
 
 //sp版のsidebar
 .l-sidebar.is-open {
-    overflow  : scroll;
+    overflow  : hidden;
     right     : 0; //元の場所に右から出てくる
     visibility: visible; //表示する
     opacity   : 1;
