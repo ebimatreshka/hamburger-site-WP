@@ -20,10 +20,24 @@ ul.sub-menu {
         padding-bottom: m.pc-vw( 23 );
     }
 }
-
+//バーガー、サイド、ドリンクのmargin
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
+    margin-bottom    : m.sp-vw( 25 );
+    @include m.tablet {
+        // padding-left  : m.tb-vw( 46 );
+    }
     @include m.pc {
         display: inline-block;
         margin-bottom: m.pc-vw( 40 );
+    }
+}
+
+//footer
+//ショップ情報とヒストリーを横並び
+div[class="menu"] > ul {
+    display: flex;
+    //文字色白
+    > li a {
+        color: v.$color-white;
     }
 }
