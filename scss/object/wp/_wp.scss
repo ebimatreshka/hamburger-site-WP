@@ -4,11 +4,12 @@
 @use "./../../foundation/mixin" as m;
 
 //front-page
+//brunch-menuのtitle下の擬似要素
 h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
+    position: absolute;
     content: '';
     display: inline-block;
     background-color: v.$color-white;
-    position: absolute;
     width     : 9.03vw;
     height    : 6.5px;
     height    : 1.2vw;
@@ -31,7 +32,13 @@ h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
 //sidebar
 //メニュー名を右へ
 ul.sub-menu {
-    padding-left: 1vw;
+    padding-left    : m.sp-vw( 66 );
+    @include m.tablet {
+        padding-left: m.tb-vw( 66 );
+    }
+    @include m.pc {
+        padding-left: m.pc-vw( 66 );
+    }
 }
 
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-14 {
@@ -43,10 +50,14 @@ ul.sub-menu {
         margin: 0;
     }
 }
-
 //文字間隔.p-nav__li
 .menu-item.menu-item-type-post_type.menu-item-object-post {
+    font-family: "M PLUS 1p", sans-serif;
     font-weight: 400;
+    padding-bottom    : m.sp-vw( 23 );
+    @include m.tablet {
+        padding-bottom: m.tb-vw( 23 );
+    }
     @include m.pc {
         padding-bottom: m.pc-vw( 23 );
     }
@@ -54,19 +65,32 @@ ul.sub-menu {
 
 //バーガー、サイド、ドリンクのmargin
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
+    display: inline-block;
+    padding-left      : m.sp-vw( 46 );
     margin-bottom    : m.sp-vw( 25 );
     font-size: m.sp-vw( 24 );
     font-family: "M PLUS 1p", sans-serif;
     font-weight: 700;
     @include m.tablet {
+        padding-left  : m.tb-vw( 46 );
         font-size     : m.tb-vw( 24 );
     }
     @include m.pc {
         display: inline-block;
+        text-align    : left;
+        padding-left  : m.pc-vw( 46 );
         margin-bottom: m.pc-vw( 40 );
         font-size     : m.pc-vw( 24 );
     }
 }
+//サイドのマージン
+.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-16 > a {
+    margin-top        : m.sp-vw( 11 );
+}
+.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-15 > a {
+    margin-top        : m.sp-vw( 11 ); 
+}
+
 
 //footer
 //ショップ情報とヒストリーを横並び

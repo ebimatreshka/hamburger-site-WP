@@ -1411,18 +1411,18 @@ img {
   top: 1.9vw;
   left: 74.4vw;
 }
-.p-nav__title, .p-nav .menu-item-type-taxonomy {
+.p-nav__title {
   padding-left: 12.2666666667vw;
   padding-bottom: 6.6666666667vw;
 }
 @media screen and (min-width: 600px) {
-  .p-nav__title, .p-nav .menu-item-type-taxonomy {
+  .p-nav__title {
     padding-left: 5.51558753vw;
     font-size: 2.8776978417vw;
   }
 }
 @media screen and (min-width: 1025px) {
-  .p-nav__title, .p-nav .menu-item-type-taxonomy {
+  .p-nav__title {
     padding-bottom: 2.0833333333vw;
     padding-left: 2.3958333333vw;
     text-align: left;
@@ -1940,10 +1940,10 @@ img {
 }
 
 h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
+  position: absolute;
   content: "";
   display: inline-block;
   background-color: #FFFFFF;
-  position: absolute;
   width: 9.03vw;
   height: 6.5px;
   height: 1.2vw;
@@ -1968,7 +1968,17 @@ h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
 }
 
 ul.sub-menu {
-  padding-left: 1vw;
+  padding-left: 17.6vw;
+}
+@media screen and (min-width: 600px) {
+  ul.sub-menu {
+    padding-left: 7.9136690647vw;
+  }
+}
+@media screen and (min-width: 1025px) {
+  ul.sub-menu {
+    padding-left: 3.4375vw;
+  }
 }
 
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-14 {
@@ -1986,7 +1996,14 @@ ul.sub-menu {
 }
 
 .menu-item.menu-item-type-post_type.menu-item-object-post {
+  font-family: "M PLUS 1p", sans-serif;
   font-weight: 400;
+  padding-bottom: 6.1333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .menu-item.menu-item-type-post_type.menu-item-object-post {
+    padding-bottom: 2.757793765vw;
+  }
 }
 @media screen and (min-width: 1025px) {
   .menu-item.menu-item-type-post_type.menu-item-object-post {
@@ -1995,6 +2012,8 @@ ul.sub-menu {
 }
 
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
+  display: inline-block;
+  padding-left: 12.2666666667vw;
   margin-bottom: 6.6666666667vw;
   font-size: 6.4vw;
   font-family: "M PLUS 1p", sans-serif;
@@ -2002,15 +2021,26 @@ ul.sub-menu {
 }
 @media screen and (min-width: 600px) {
   .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
+    padding-left: 5.51558753vw;
     font-size: 2.8776978417vw;
   }
 }
 @media screen and (min-width: 1025px) {
   .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
     display: inline-block;
+    text-align: left;
+    padding-left: 2.3958333333vw;
     margin-bottom: 2.0833333333vw;
     font-size: 1.25vw;
   }
+}
+
+.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-16 > a {
+  margin-top: 2.9333333333vw;
+}
+
+.menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-15 > a {
+  margin-top: 2.9333333333vw;
 }
 
 div[class=menu] > ul {
