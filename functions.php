@@ -52,34 +52,17 @@ function hamburger_script()
     wp_enqueue_style("style-css", get_template_directory_uri() . "/style.css", array(), "");
     //jQuery読み込み
     wp_enqueue_script("jQuery", "https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js", "", "", true);
+
+
     //script読み込み
     wp_enqueue_script("script", get_template_directory_uri() . "/js/script.js", "jQuery", "", true);
+    // wp_enqueue_style('script', get_theme_file_uri('/js/script.js'));
 }
-//動かないのでheader.phpに読み込ませた
-// //jQuery読み込み
-// function custom_print_scripts() {
-// 	if (!is_admin()) {
-// 		//デフォルトjquery削除
-// 		wp_deregister_script('jquery');
-
-// 		//GoogleCDNから読み込む
-// 		wp_enqueue_script('jquery-js', '//ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js' );
-// 	}
-// }
-// add_action('wp_print_scripts', 'custom_print_scripts');
 
 
 //実行
 add_action("wp_enqueue_scripts", "hamburger_script");
 
-// ファビコンを読み込ませる　できなくなった
-// function setup_favicon() {
-// 	echo '<link rel="icon" href="' . get_template_directory_uri() . '/favicon.ico">' . "\n";
-// }
-// //実行
-// add_action('wp_head', 'setup_favicon');
-// add_action('login_head', 'setup_favicon');
-// add_action('admin_head', 'setup_favicon');
 
 //ウィジェット機能の有効化
 function my_theme_widgets_init()

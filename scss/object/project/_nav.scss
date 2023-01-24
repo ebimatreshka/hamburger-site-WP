@@ -17,7 +17,12 @@
         min-height : 8.53vw;
         top        : 2vw;
         left       : 74.5vw;   
+        z-index: 1000;
         @include m.tablet {
+            min-height : 4vw;
+            top        : 0;
+            left       : 37.1vw;   
+    
             width  : m.tb-vw( 32 );
             height : m.tb-vw( 32 );
         }
@@ -44,12 +49,18 @@
         }
         //回転させて×ボタンへ
         &::before {
-            top      : 5.5vw;
+            top      : 12.5vw;
             transform: rotate( 45deg);
+            @include m.tablet {
+                top      : 7.5vw;
+            }
         }
         &::after {
-            top      : 5.5vw;
+            top      : 12.5vw;
             transform: rotate( -45deg);
+            @include m.tablet {
+                top  : 7.5vw;                
+            }
         }
     }
     //ボタン表示のハコ
@@ -61,7 +72,7 @@
         top     : 1.9vw;
         left    : m.sp-vw( 279 );
     }
-    &__title {
+    &__title.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
         padding-left      : m.sp-vw( 46 );
         padding-bottom    : m.sp-vw( 25 );
         @include m.tablet {
