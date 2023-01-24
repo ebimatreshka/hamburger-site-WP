@@ -73,6 +73,7 @@ ul.sub-menu {
     font-weight: 700;
     @include m.tablet {
         padding-left  : m.tb-vw( 46 );
+        margin-bottom: m.tb-vw( 40 );
         font-size     : m.tb-vw( 24 );
     }
     @include m.pc {
