@@ -1,5 +1,5 @@
 //ハンバーガーメニュー(スライドインさせるために)
-jQuery(function () {
+jsjQuery(function () {
   $(".p-header__title--menu").click(function () {
     $(this).addClass("is-active");
     $(".l-container__black").addClass("is-active"); //黒幕にis-activeをつける(表示)
