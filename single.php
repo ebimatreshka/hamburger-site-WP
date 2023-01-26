@@ -28,34 +28,34 @@
             </section>
 
             <!--横いっぱいのハンバーガー画像-->
-            <img class="c-image__single--big u-margin__0" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+            <img class="c-image__single--big u-margin__0" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
 
             <!--ハンバーガーの画像と記事-->
             <section class="p-article1">
-                <img class="p-article1__img c-image__single--middle" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="p-article1__img c-image__single--middle" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
                 <p class="p-article1__text c-font__M--regular c-font-size__16 c-LH14375"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
             </section>
 
             <!--記事とハンバーガーの画像-->
             <section class="p-article1 u-margin__B30">
                 <p class="p-article2__text c-font__M--regular c-font-size__16 c-LH14375"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                <img class="p-article2__img c-image__single--middle" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="p-article2__img c-image__single--middle" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
             </section>
 
             <!--中央揃えのハンバーガー画像-->
-            <img class="c-image__single--middle2 u-margin__0" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+            <img class="c-image__single--middle2 u-margin__0" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
 
             <!--タイル型ハンバーガー×9-->
             <section class="l-container__single c-grid__single">
-                <img class="c-image__single--small" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="./images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
             </section>
 
             <!--リスト数字付き-->
