@@ -124,6 +124,7 @@ div[class="menu"] > ul {
         }
     }
 }
+//<<のマージン調整
 .wp-pagenavi > .previouspostslink {
     @include m.tablet {
         margin-right    : m.tb-vw( 17.2 );
