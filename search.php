@@ -49,7 +49,7 @@
         <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
         <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
         <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-        <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+        <img class="c-image__single--small" src="images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
     </section>
 
     <!--リスト数字付き-->

@@ -2074,6 +2074,35 @@ div[class=menu] > ul > li a {
   padding: 2px 8px;
 }
 
+.p-pagination > .wp-pagenavi > .page.smaller {
+  border-color: #707070;
+}
+@media screen and (min-width: 600px) {
+  .p-pagination > .wp-pagenavi > .page.smaller {
+    margin-right: 2.0623501199vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .p-pagination > .wp-pagenavi > .page.smaller {
+    margin-right: 0.78125vw;
+  }
+}
+
+@media screen and (min-width: 600px) {
+  .wp-pagenavi > .previouspostslink {
+    margin-right: 2.0623501199vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .wp-pagenavi > .previouspostslink {
+    margin-right: 0.78125vw;
+  }
+}
+
+.wp-pagenavi > .previouspostslink, .wp-pagenavi > .nextpostslink {
+  border: none;
+}
+
 .u-margin__title--menu {
   display: none;
 }

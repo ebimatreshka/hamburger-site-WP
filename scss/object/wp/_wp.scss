@@ -110,3 +110,29 @@ div[class="menu"] > ul {
 .page_item.page-item-79 {
     padding: 2px 8px;
 }
+
+//ページネーション
+//箱の間隔調整
+.p-pagination > .wp-pagenavi > .page.smaller {
+    // display             : block;
+    // text-align          : center;
+    border-color: v.$color-brown;
+    @include m.tablet {
+        margin-right    : m.tb-vw( 17.2 );
+        @include m.pc {
+            margin-right: m.pc-vw( 15 );
+        }
+    }
+}
+.wp-pagenavi > .previouspostslink {
+    @include m.tablet {
+        margin-right    : m.tb-vw( 17.2 );
+        @include m.pc {
+            margin-right: m.pc-vw( 15 );
+        }
+    }
+}
+//<<と>>の箱の囲みを解除
+.wp-pagenavi > .previouspostslink, .wp-pagenavi > .nextpostslink {
+    border: none;
+}
