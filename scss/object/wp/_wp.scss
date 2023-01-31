@@ -112,30 +112,34 @@ div[class="menu"] > ul {
 }
 
 //ページネーション
-//箱の間隔調整(classがlargerとsmallerの2つあり)
+    //箱の間隔調整(classがlargerとsmallerの2つあり)
 .p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
     // display             : block;
     // text-align          : center;
+    visibility: hidden;
     border-color: v.$color-brown;
     @include m.tablet {
+        visibility: visible;
         margin-right    : m.tb-vw( 17.2 );
         @include m.pc {
             margin-right: m.pc-vw( 15 );
         }
     }
 }
-//箱の間隔調整,文字の太さ揃える,線の色
+    //箱の間隔調整,文字の太さ揃える,線の色
 .wp-pagenavi span.current {
     font-weight: 400;
     border-color: #707070;
+    visibility: hidden;
     @include m.tablet {
+        visibility: visible;
         margin-right    : m.tb-vw( 17.2 );
         @include m.pc {
             margin-right: m.pc-vw( 15 );
         }
     }
 }
-//<<のマージン調整
+    //<<のマージン調整
 .wp-pagenavi > .previouspostslink {
     @include m.tablet {
         margin-right    : m.tb-vw( 17.2 );
@@ -144,7 +148,42 @@ div[class="menu"] > ul {
         }
     }
 }
-//<<と>>の箱の囲みを解除
+    //<<と>>の箱の囲みを解除
 .wp-pagenavi > .previouspostslink, .wp-pagenavi > .nextpostslink {
     border: none;
+}
+    //spの<<の位置
+.wp-pagenavi > .nextpostslink {
+    padding-left: 62vw;
+    @include m.tablet {
+        padding-left: 0;
+    }
+}
+    //spで前へ表示
+.previouspostslink {
+   &::before {
+    content: "前へ";
+    display         : block;
+    position        : absolute;
+    height          : m.sp-vw( 22 );
+    background-color: v.$color-bg-egg;
+    left            : m.sp-vw( 46 );
+    @include m.tablet {
+        display: none; //前へを非表示に
+    }
+    } 
+}
+    //spで次へ表示
+.nextpostslink {
+    &::after {
+        content: "次へ";
+        // display         : block;
+        position        : absolute;
+        height          : m.sp-vw( 22 );
+        background-color: v.$color-bg-egg;
+        right           : m.sp-vw( 45 );
+        @include m.tablet {
+            display: none; //次へを非表示に
+        }
+    }
 }
