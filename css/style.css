@@ -2074,16 +2074,31 @@ div[class=menu] > ul > li a {
   padding: 2px 8px;
 }
 
-.p-pagination > .wp-pagenavi > .page.smaller {
+.p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
   border-color: #707070;
 }
 @media screen and (min-width: 600px) {
-  .p-pagination > .wp-pagenavi > .page.smaller {
+  .p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
     margin-right: 2.0623501199vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
-  .p-pagination > .wp-pagenavi > .page.smaller {
+  .p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
+    margin-right: 0.78125vw;
+  }
+}
+
+.wp-pagenavi span.current {
+  font-weight: 400;
+  border-color: #707070;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi span.current {
+    margin-right: 2.0623501199vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .wp-pagenavi span.current {
     margin-right: 0.78125vw;
   }
 }

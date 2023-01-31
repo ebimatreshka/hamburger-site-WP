@@ -112,11 +112,22 @@ div[class="menu"] > ul {
 }
 
 //ページネーション
-//箱の間隔調整
-.p-pagination > .wp-pagenavi > .page.smaller {
+//箱の間隔調整(classがlargerとsmallerの2つあり)
+.p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
     // display             : block;
     // text-align          : center;
     border-color: v.$color-brown;
+    @include m.tablet {
+        margin-right    : m.tb-vw( 17.2 );
+        @include m.pc {
+            margin-right: m.pc-vw( 15 );
+        }
+    }
+}
+//箱の間隔調整,文字の太さ揃える,線の色
+.wp-pagenavi span.current {
+    font-weight: 400;
+    border-color: #707070;
     @include m.tablet {
         margin-right    : m.tb-vw( 17.2 );
         @include m.pc {
