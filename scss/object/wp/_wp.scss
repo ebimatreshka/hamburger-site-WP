@@ -4,7 +4,7 @@
 @use "./../../foundation/mixin" as m;
 
 //front-page
-//brunch-menuのtitle下の擬似要素
+    //brunch-menuのtitle下の擬似要素
 h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
     position: absolute;
     content: '';
@@ -30,7 +30,7 @@ h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
 }
 
 //sidebar
-//メニュー名を右へ
+    //メニュー名を右へ
 ul.sub-menu {
     padding-left    : m.sp-vw( 66 );
     @include m.tablet {
@@ -50,7 +50,7 @@ ul.sub-menu {
         margin: 0;
     }
 }
-//文字間隔.p-nav__li
+    //文字間隔.p-nav__li
 .menu-item.menu-item-type-post_type.menu-item-object-post {
     font-family: "M PLUS 1p", sans-serif;
     font-weight: 400;
@@ -63,7 +63,7 @@ ul.sub-menu {
     }
 }
 
-//バーガー、サイド、ドリンクのmargin
+    //バーガー、サイド、ドリンクのmargin
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
     display: inline-block;
     padding-left      : m.sp-vw( 46 );
@@ -84,7 +84,7 @@ ul.sub-menu {
         font-size     : m.pc-vw( 24 );
     }
 }
-//サイドのマージン
+    //サイドのマージン
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-16 > a {
     margin-top        : m.sp-vw( 11 );
 }
@@ -94,7 +94,7 @@ ul.sub-menu {
 
 
 //footer
-//ショップ情報とヒストリーを横並び
+    //ショップ情報とヒストリーを横並び
 div[class="menu"] > ul {
     display: flex;
     //文字色白
@@ -102,7 +102,7 @@ div[class="menu"] > ul {
         color: v.$color-white;
     }
 }
-//ショップ情報とヒストリーの間に縦線
+    //ショップ情報とヒストリーの間に縦線
 .page_item.page-item-19 {
     border-right: 1px solid v.$color-white;
     padding: 2px 8px;
@@ -114,8 +114,6 @@ div[class="menu"] > ul {
 //ページネーション
     //箱の間隔調整(classがlargerとsmallerの2つあり)
 .p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
-    // display             : block;
-    // text-align          : center;
     visibility: hidden;
     border-color: v.$color-brown;
     @include m.tablet {
