@@ -2089,6 +2089,10 @@ div[class=menu] > ul > li a {
     align-items: center;
   }
 }
+.wp-pagenavi a:hover {
+  background-color: #3C2A10;
+  color: #FFFFFF;
+}
 
 .page.larger, .page.smaller, .current {
   display: none;
@@ -2103,12 +2107,10 @@ div[class=menu] > ul > li a {
   }
 }
 
-.page.larger, .page.smaller, span.current {
-  border: solid 1px #707070;
-  color: #707070;
-}
 @media screen and (min-width: 600px) {
   .page.larger, .page.smaller, span.current {
+    border: solid 1px #707070;
+    color: #707070;
     font-family: "Roboto", sans-serif;
     font-weight: bold;
     width: 4.1966426859vw;
@@ -2124,6 +2126,7 @@ div[class=menu] > ul > li a {
     height: 1.8229166667vw;
     margin-right: 0.78125vw;
     font-size: 0.8333333333vw;
+    line-height: 1.5;
   }
 }
 

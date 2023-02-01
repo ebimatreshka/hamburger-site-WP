@@ -112,16 +112,22 @@ div[class="menu"] > ul {
 }
 
 //ページネーション
+    //全体を囲む
 .wp-pagination__wapper {
     display: block;
     position: relative;
 }
+    //横並び
 .wp-pagenavi {
     display: flex;
     justify-content: space-between;
     @include m.tablet {
         justify-content: center;
         align-items: center;
+    }
+    a:hover {
+        background-color: v.$color-dark-brown;
+        color: v.$color-white;
     }
 }
 // .p-pagination__item {
@@ -131,11 +137,11 @@ div[class="menu"] > ul {
 //     }
 // }
 
-//     //箱の間隔調整(classがlargerとsmallerの2つあり)
+    //箱の間隔調整(classがlargerとsmallerの2つあり)
 // .p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
 .page.larger, .page.smaller, .current {
     display: none;
-// //     border-color: v.$color-brown;
+//     border-color: v.$color-brown;
     @include m.tablet {
         display: block;
         width: m.tb-vw( 35 );
@@ -154,9 +160,9 @@ div[class="menu"] > ul {
 }
     //箱の調整
 .page.larger, .page.smaller, span.current {
-    border: solid 1px v.$color-brown;
-    color : v.$color-brown;
     @include m.tablet {
+        border: solid 1px v.$color-brown;
+        color : v.$color-brown;
         font-family: "Roboto", sans-serif;
         font-weight: bold;
         width       : m.tb-vw( 35 );
@@ -170,13 +176,9 @@ div[class="menu"] > ul {
         height      : m.pc-vw( 35 );
         margin-right: m.pc-vw( 15 );
         font-size   : m.pc-vw( 16 );
+        line-height : 1.5;
     }
 }
-// .page.larger {
-// @include m.tablet {
-//     margin-right: 0;
-// }
-// }
 
 
 //     //箱の間隔調整,文字の太さ揃える,線の色
