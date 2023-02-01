@@ -4,9 +4,9 @@
 @use "./../../foundation/mixin" as m;
 
 .p-pagination {
-    display              : flex;
-    justify-content      : space-between;
-    align-items          : center;
+    display              : block;
+    // justify-content      : space-between;
+    // align-items          : center;
     margin-top           : m.sp-vw( 60.4 );
     margin-right         : m.sp-vw( 20.2 );
     margin-bottom        : m.sp-vw( 31 );

@@ -112,51 +112,77 @@ div[class="menu"] > ul {
 }
 
 //ページネーション
-    //箱の間隔調整(classがlargerとsmallerの2つあり)
+.wp-pagenavi {
+    display: flex;
+    justify-content: space-between;
+//     @include m.tablet {
+//         justify-content: center;
+//         align-items: center;
+    }
+// }
+// .p-pagination__item {
+//     display: none;
+//     @include m.tablet {
+//         display: block;
+//     }
+// }
+
+//     //箱の間隔調整(classがlargerとsmallerの2つあり)
 .p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
-    visibility: hidden;
-    border-color: v.$color-brown;
-    @include m.tablet {
-        visibility: visible;
-        margin-right    : m.tb-vw( 17.2 );
-        @include m.pc {
-            margin-right: m.pc-vw( 15 );
-        }
-    }
+    display: none;
+//     border-color: v.$color-brown;
+//     @include m.tablet {
+//         width: m.tb-vw( 35 );
+//         height: m.tb-vw( 35 );
+//         text-align: center;
+//         line-height: 1.5;
+//         margin-right    : m.tb-vw( 17.2 );
+//         @include m.pc {
+//             width: m.pc-vw( 35 );
+//             height: m.pc-vw( 35 );        
+//             line-height: 1;
+//             margin-right: m.pc-vw( 15 );
+//         }
+//     }
 }
-    //箱の間隔調整,文字の太さ揃える,線の色
+//     //箱の間隔調整,文字の太さ揃える,線の色
 .wp-pagenavi span.current {
-    font-weight: 400;
-    border-color: #707070;
-    visibility: hidden;
-    @include m.tablet {
-        visibility: visible;
-        margin-right    : m.tb-vw( 17.2 );
-        @include m.pc {
-            margin-right: m.pc-vw( 15 );
-        }
-    }
+    display: none;
+//     font-weight: 400;
+//     border-color: #707070;
+//     @include m.tablet {
+//         width: m.tb-vw( 35 );
+//         height: m.tb-vw( 35 );
+//         text-align: center;
+//         line-height: 1.5;
+//         margin-right    : m.tb-vw( 17.2 );
+//         @include m.pc {
+//             width: m.pc-vw( 35 );
+//             height: m.pc-vw( 35 );
+//             line-height: 1;
+//             margin-right: m.pc-vw( 15 );
+//         }
+//     }
 }
-    //<<のマージン調整
-.wp-pagenavi > .previouspostslink {
-    @include m.tablet {
-        margin-right    : m.tb-vw( 17.2 );
-        @include m.pc {
-            margin-right: m.pc-vw( 15 );
-        }
-    }
-}
-    //<<と>>の箱の囲みを解除
+//     //<<のマージン調整
+// .wp-pagenavi > .previouspostslink {
+//     @include m.tablet {
+//         margin-right    : m.tb-vw( 17.2 );
+//         @include m.pc {
+//             margin-right: m.pc-vw( 15 );
+//         }
+//     }
+// }
+//     //<<と>>の箱の囲みを解除
 .wp-pagenavi > .previouspostslink, .wp-pagenavi > .nextpostslink {
     border: none;
 }
-    //spの<<の位置
-.wp-pagenavi > .nextpostslink {
-    padding-left: 62vw;
-    @include m.tablet {
-        padding-left: 0;
-    }
-}
+//     //spの<<の位置
+// .wp-pagenavi > .nextpostslink {
+//     @include m.tablet {
+//         padding-left: 0;
+//     }
+// }
     //spで前へ表示
 .previouspostslink {
    &::before {

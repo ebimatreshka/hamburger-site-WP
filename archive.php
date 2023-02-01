@@ -61,22 +61,25 @@
 
 
     <!--ページネーション-->
-    <ul class="p-pagination">
-        <li class="p-pagination__item p-pagination__item--hide c-font__R--bold u-margin__R193">page 1/10</li>
-        <!-- <li class="p-pagination__item-- u-margin__L203 c-pseudo-element">《</a></li> -->
-        <?php wp_pagenavi(); ?>
-        <!-- <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination c-bg-color--dark-brown c-color__white" href="">1</a></li>
-        <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link  c-button__pagination" href="">2</a></li>
-        <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">3</a></li>
-        <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">4</a></li>
-        <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">5</a></li>
-        <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">6</a></li>
-        <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">7</a></li>
-        <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">8</a></li>
-        <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">9</a></li> -->
-        <!-- <li class="p-pagination__item c-font__M--regular"><a class="p-pagination__item--link c-pseudo-element__》 c-font-size__16" href="">》</a></li> -->
-        <!-- <li class="p-pagination__item">》</a></li> -->
-    </ul>
+    <div class=wapper-pagination>
+        <ul class="p-pagination">
+            <li class="p-pagination__item p-pagination__item--hide c-font__R--bold u-margin__R193">page 1/10</li>
+            <!-- <li class="p-pagination__item-- u-margin__L203 c-pseudo-element">《</a></li> -->
+            <!-- 拡張機能で表示させる -->
+            <?php wp_pagenavi(); ?>
+            <!-- <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination c-bg-color--dark-brown c-color__white" href="">1</a></li>
+                <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link  c-button__pagination" href="">2</a></li>
+                <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">3</a></li>
+                <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">4</a></li>
+                <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">5</a></li>
+                <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">6</a></li>
+                <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">7</a></li>
+                <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">8</a></li>
+                <li class="p-pagination__item p-pagination__item--hide c-font__R--bold"><a class="p-pagination__item--link c-button__pagination" href="">9</a></li> -->
+            <!-- <li class="p-pagination__item c-font__M--regular"><a class="p-pagination__item--link c-pseudo-element__》 c-font-size__16" href="">》</a></li> -->
+            <!-- <li class="p-pagination__item">》</a></li> -->
+        </ul>
+    </div>
 
 </main>
 
