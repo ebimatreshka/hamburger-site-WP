@@ -35,6 +35,7 @@
         display    : none; //sp版で不要な表示を消す
         @include m.tablet {
             display: block;
+            line-height: 2.2;
         }
     }
 }

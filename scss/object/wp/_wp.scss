@@ -133,15 +133,16 @@ div[class="menu"] > ul {
 
 //     //箱の間隔調整(classがlargerとsmallerの2つあり)
 // .p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
-.page.larger, .page.smaller {
+.page.larger, .page.smaller, .current {
     display: none;
 // //     border-color: v.$color-brown;
     @include m.tablet {
         display: block;
-//         width: m.tb-vw( 35 );
-//         height: m.tb-vw( 35 );
-//         text-align: center;
-//         line-height: 1.5;
+        width: m.tb-vw( 35 );
+        height: m.tb-vw( 35 );
+        text-align: center;
+        border: solid 1px v.$color-brown;
+        // line-height: 1.5;
 //         margin-right    : m.tb-vw( 17.2 );
 //         @include m.pc {
 //             width: m.pc-vw( 35 );
@@ -151,17 +152,44 @@ div[class="menu"] > ul {
 //         }
     }
 }
+    //箱の調整
+.page.larger, .page.smaller, span.current {
+    border: solid 1px v.$color-brown;
+    color : v.$color-brown;
+    @include m.tablet {
+        font-family: "Roboto", sans-serif;
+        font-weight: bold;
+        width       : m.tb-vw( 35 );
+        height      : m.tb-vw( 35 );
+        margin-right: m.tb-vw( 15 );
+        font-size   : m.tb-vw( 16 );
+        line-height : 1.7;
+    }
+    @include m.pc {
+        width       : m.pc-vw( 35 );
+        height      : m.pc-vw( 35 );
+        margin-right: m.pc-vw( 15 );
+        font-size   : m.pc-vw( 16 );
+    }
+}
+// .page.larger {
+// @include m.tablet {
+//     margin-right: 0;
+// }
+// }
+
+
 //     //箱の間隔調整,文字の太さ揃える,線の色
 // .wp-pagenavi span.current {
-.current {
-    display: none;
+// .current {
+//     display: none;
 // //     font-weight: 400;
 // //     border-color: #707070;
-    @include m.tablet {
-        display: block;
-//         width: m.tb-vw( 35 );
-//         height: m.tb-vw( 35 );
-//         text-align: center;
+    // @include m.tablet {
+    //     display: block;
+    //     width: m.tb-vw( 35 );
+    //     height: m.tb-vw( 35 );
+    //     text-align: center;
 //         line-height: 1.5;
 //         margin-right    : m.tb-vw( 17.2 );
 //         @include m.pc {
@@ -170,8 +198,8 @@ div[class="menu"] > ul {
 //             line-height: 1;
 //             margin-right: m.pc-vw( 15 );
 //         }
-    }
-}
+//     }
+// }
 //     //<<のマージン調整
 // .wp-pagenavi > .previouspostslink {
 //     @include m.tablet {

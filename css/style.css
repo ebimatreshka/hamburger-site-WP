@@ -1530,6 +1530,7 @@ img {
 @media screen and (min-width: 600px) {
   .p-pagination__item--hide {
     display: block;
+    line-height: 2.2;
   }
 }
 
@@ -2089,21 +2090,40 @@ div[class=menu] > ul > li a {
   }
 }
 
-.page.larger, .page.smaller {
+.page.larger, .page.smaller, .current {
   display: none;
 }
 @media screen and (min-width: 600px) {
-  .page.larger, .page.smaller {
+  .page.larger, .page.smaller, .current {
     display: block;
+    width: 4.1966426859vw;
+    height: 4.1966426859vw;
+    text-align: center;
+    border: solid 1px #707070;
   }
 }
 
-.current {
-  display: none;
+.page.larger, .page.smaller, span.current {
+  border: solid 1px #707070;
+  color: #707070;
 }
 @media screen and (min-width: 600px) {
-  .current {
-    display: block;
+  .page.larger, .page.smaller, span.current {
+    font-family: "Roboto", sans-serif;
+    font-weight: bold;
+    width: 4.1966426859vw;
+    height: 4.1966426859vw;
+    margin-right: 1.7985611511vw;
+    font-size: 1.9184652278vw;
+    line-height: 1.7;
+  }
+}
+@media screen and (min-width: 1025px) {
+  .page.larger, .page.smaller, span.current {
+    width: 1.8229166667vw;
+    height: 1.8229166667vw;
+    margin-right: 0.78125vw;
+    font-size: 0.8333333333vw;
   }
 }
 
