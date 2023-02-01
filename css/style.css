@@ -1498,6 +1498,7 @@ img {
 }
 @media screen and (min-width: 600px) {
   .p-pagination {
+    display: flex;
     justify-content: center;
     margin-top: 12.6498800959vw;
     margin-bottom: 3.5971223022vw;
@@ -2072,20 +2073,45 @@ div[class=menu] > ul > li a {
   padding: 2px 8px;
 }
 
+.wp-pagination__wapper {
+  display: block;
+  position: relative;
+}
+
 .wp-pagenavi {
   display: flex;
   justify-content: space-between;
 }
-
-.p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
-  display: none;
+@media screen and (min-width: 600px) {
+  .wp-pagenavi {
+    justify-content: center;
+    align-items: center;
+  }
 }
 
-.wp-pagenavi span.current {
+.page.larger, .page.smaller {
   display: none;
 }
+@media screen and (min-width: 600px) {
+  .page.larger, .page.smaller {
+    display: block;
+  }
+}
 
-.wp-pagenavi > .previouspostslink, .wp-pagenavi > .nextpostslink {
+.current {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .current {
+    display: block;
+  }
+}
+
+.wp-pagination__wapper > .p-pagination > .wp-pagenavi > .previouspostslink {
+  border: none;
+}
+
+.wp-pagination__wapper > .p-pagination > .wp-pagenavi > .nextpostslink {
   border: none;
 }
 
@@ -2105,10 +2131,12 @@ div[class=menu] > ul > li a {
 
 .nextpostslink::after {
   content: "次へ";
+  display: block;
   position: absolute;
   height: 5.8666666667vw;
   background-color: #FFFDFA;
   right: 12vw;
+  top: 1.8vw;
 }
 @media screen and (min-width: 600px) {
   .nextpostslink::after {

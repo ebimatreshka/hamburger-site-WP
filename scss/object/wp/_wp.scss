@@ -112,14 +112,18 @@ div[class="menu"] > ul {
 }
 
 //ページネーション
+.wp-pagination__wapper {
+    display: block;
+    position: relative;
+}
 .wp-pagenavi {
     display: flex;
     justify-content: space-between;
-//     @include m.tablet {
-//         justify-content: center;
-//         align-items: center;
+    @include m.tablet {
+        justify-content: center;
+        align-items: center;
     }
-// }
+}
 // .p-pagination__item {
 //     display: none;
 //     @include m.tablet {
@@ -128,10 +132,12 @@ div[class="menu"] > ul {
 // }
 
 //     //箱の間隔調整(classがlargerとsmallerの2つあり)
-.p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
+// .p-pagination > .wp-pagenavi > .page.larger, .page.smaller {
+.page.larger, .page.smaller {
     display: none;
-//     border-color: v.$color-brown;
-//     @include m.tablet {
+// //     border-color: v.$color-brown;
+    @include m.tablet {
+        display: block;
 //         width: m.tb-vw( 35 );
 //         height: m.tb-vw( 35 );
 //         text-align: center;
@@ -143,14 +149,16 @@ div[class="menu"] > ul {
 //             line-height: 1;
 //             margin-right: m.pc-vw( 15 );
 //         }
-//     }
+    }
 }
 //     //箱の間隔調整,文字の太さ揃える,線の色
-.wp-pagenavi span.current {
+// .wp-pagenavi span.current {
+.current {
     display: none;
-//     font-weight: 400;
-//     border-color: #707070;
-//     @include m.tablet {
+// //     font-weight: 400;
+// //     border-color: #707070;
+    @include m.tablet {
+        display: block;
 //         width: m.tb-vw( 35 );
 //         height: m.tb-vw( 35 );
 //         text-align: center;
@@ -162,7 +170,7 @@ div[class="menu"] > ul {
 //             line-height: 1;
 //             margin-right: m.pc-vw( 15 );
 //         }
-//     }
+    }
 }
 //     //<<のマージン調整
 // .wp-pagenavi > .previouspostslink {
@@ -173,19 +181,17 @@ div[class="menu"] > ul {
 //         }
 //     }
 // }
-//     //<<と>>の箱の囲みを解除
-.wp-pagenavi > .previouspostslink, .wp-pagenavi > .nextpostslink {
+    //<<と>>の箱の囲みを解除
+.wp-pagination__wapper > .p-pagination > .wp-pagenavi > .previouspostslink {
     border: none;
 }
-//     //spの<<の位置
-// .wp-pagenavi > .nextpostslink {
-//     @include m.tablet {
-//         padding-left: 0;
-//     }
-// }
+.wp-pagination__wapper > .p-pagination > .wp-pagenavi > .nextpostslink {
+    border: none;
+}
+
     //spで前へ表示
 .previouspostslink {
-   &::before {
+    &::before {
     content: "前へ";
     display         : block;
     position        : absolute;
@@ -194,18 +200,19 @@ div[class="menu"] > ul {
     left            : m.sp-vw( 46 );
     @include m.tablet {
         display: none; //前へを非表示に
-    }
+        }
     } 
 }
     //spで次へ表示
 .nextpostslink {
     &::after {
         content: "次へ";
-        // display         : block;
+        display         : block;
         position        : absolute;
         height          : m.sp-vw( 22 );
         background-color: v.$color-bg-egg;
         right           : m.sp-vw( 45 );
+        top             : 1.8vw;
         @include m.tablet {
             display: none; //次へを非表示に
         }

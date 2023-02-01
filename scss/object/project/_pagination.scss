@@ -12,6 +12,7 @@
     margin-bottom        : m.sp-vw( 31 );
     margin-left          : m.sp-vw( 20.3 );
     @include m.tablet {
+        display: flex;
         justify-content  : center;
         margin-top       : m.tb-vw( 105.5 );
         margin-bottom    : m.tb-vw( 30 );
