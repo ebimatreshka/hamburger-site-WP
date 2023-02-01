@@ -73,3 +73,14 @@ function my_theme_widgets_init()
     ));
 }
 add_action('widgets_init', 'my_theme_widgets_init');
+
+//search.phpのcardの表示件数を設定
+add_action('pre_get_posts', function ($query) {
+    if (is_admin() || !$query->is_main_query()) {
+        return;
+    }
+    if (is_search()) {
+        $query->set('posts_per_page', 5);
+        return;
+    }
+});
