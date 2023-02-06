@@ -278,3 +278,80 @@ div[class="menu"] > ul {
         }
     }
 }
+
+//archive
+    //
+.p-section__archiveAbout--article {
+    h2 {
+        margin-top          : m.sp-vw( 30 );
+        margin-left         : m.sp-vw( 30 );
+        @include m.tablet {
+            font-size       : m.tb-vw( 36 );
+            margin-top      : m.tb-vw( 36 );
+            // margin-bottom: m.tb-vw( 0 );
+            margin-left     : m.tb-vw( 42 );
+            @include m.pc {
+                font-size   : m.pc-vw( 36 );
+                margin-top  : m.pc-vw( 60 );
+                margin-left : m.pc-vw( 100 );
+            }
+        }
+    }
+    p {
+        margin-top       : m.sp-vw( 30 );
+        margin-right     : m.sp-vw( 18 );
+        margin-bottom    : m.sp-vw( 19 );
+        margin-left      : m.sp-vw( 22 );
+        line-height      : 1.4375;
+        @include m.tablet {
+            font-size    : m.tb-vw( 16 );
+            margin-top   : m.tb-vw( 25 );
+            margin-right : m.tb-vw( 35 );
+            margin-bottom: m.tb-vw( 37 );
+            margin-left  : m.tb-vw( 42 );
+        }
+        @include m.pc {
+            font-size    : m.pc-vw( 16 );
+            // margin-top: m.tb-vw( 25 );
+            margin-right : m.pc-vw( 100 );
+            margin-bottom: m.pc-vw( 71 );
+            margin-left  : m.pc-vw( 100 );
+        }
+    }
+}
+
+    //card 小見出し
+.p-section__card__about--wrapper h2:nth-child(2n) {
+    color: v.$color-white;
+    padding-top        : m.sp-vw( 24 );
+    margin-left        : m.sp-vw( 17 );
+    @include m.tablet {
+        padding-top    : m.tb-vw( 24 );
+        margin-left    : m.tb-vw( 34.7 );
+        @include m.pc {
+            font-size  : m.pc-vw( 24 );
+            line-height: 1.5;
+            padding-top: m.pc-vw( 47 );
+            margin-left: m.pc-vw( 63 );
+        }
+    }
+}
+    //card　文章
+.p-section__card__about--wrapper p {
+    color: v.$color-white;
+    padding-top         : m.sp-vw( 10 );
+    margin-right        : m.sp-vw( 73.1 );
+    margin-left         : m.sp-vw( 17 );
+    line-height         : 1.4375;
+    @include m.tablet {
+        padding-top     : m.tb-vw( 10 );
+        margin-right    : m.tb-vw( 59 );
+        margin-left     : m.tb-vw( 34.7 );
+        @include m.pc {
+            font-size   : m.pc-vw( 16 );
+            padding-top : m.pc-vw( 17 );
+            margin-right: m.pc-vw( 104 );
+            margin-left : m.pc-vw( 63 );
+        }
+    }
+}
