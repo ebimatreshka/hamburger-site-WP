@@ -10,11 +10,11 @@
                 <h1 class="p-main-visual__single--title c-font__R c-title__36 c-title__white"><?php the_title(); ?></h1>
             </div>
 
-            <!-- <?php the_content(); ?> -->
+            <?php the_content(); ?>
 
 
             <!--小見出しと引用-->
-            <section class="p-section__single">
+            <!-- <section class="p-section__single">
                 <h2 class="p-section__single--title-h2 c-font__M--bold c-font-size__28--single-h2 c-color__dark-brown c-LH15">見出しh2</h2>
                 <p class="p-section__single--text c-font__M--regular c-font-size__16 c-color__dark-brown c-LH14375">Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。Pタグテキスト。</p>
                 <h3 class="p-section__single--title-h3 u-margin__T4 c-font__M--bold c-font-size__24--single-h3 c-color__dark-brown c-LH15">見出しh3</h3>
@@ -25,41 +25,41 @@
                     <p class="p-blockquote__text c-font__M--regular c-font-size__16 c-LH14375">Blockquote 引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ引用タグ</p>
                     <p class="p-blockquote__text2 c-font__M--regular c-font-size__16 c-LH14375">出典元：　<cite><a class="p-blockquote__a c-color__blue" href="リンク先URL">◯◯◯◯◯◯◯◯◯◯◯◯</a></cite></p>
                 </blockquote>
-            </section>
+            </section> -->
 
             <!--横いっぱいのハンバーガー画像-->
-            <img class="c-image__single--big u-margin__0" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+            <!-- <img class="c-image__single--big u-margin__0" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像"> -->
 
             <!--ハンバーガーの画像と記事-->
-            <section class="p-article1">
+            <!-- <section class="p-article1">
                 <img class="p-article1__img c-image__single--middle" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
                 <p class="p-article1__text c-font__M--regular c-font-size__16 c-LH14375"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-            </section>
+            </section> -->
 
             <!--記事とハンバーガーの画像-->
-            <section class="p-article1 u-margin__B30">
+            <!-- <section class="p-article1 u-margin__B30">
                 <p class="p-article2__text c-font__M--regular c-font-size__16 c-LH14375"> テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります テキストが入ります</p>
-                <img class="p-article2__img c-image__single--middle" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-            </section>
+                <img class="p-article2__img c-image__single--middle" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+            </section> -->
 
             <!--中央揃えのハンバーガー画像-->
-            <img class="c-image__single--middle2 u-margin__0" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+            <!-- <img class="c-image__single--middle2 u-margin__0" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像"> -->
 
             <!--タイル型ハンバーガー×9-->
-            <section class="l-container__single c-grid__single">
-                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-                <img class="c-image__single--small" src="<?php echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
-            </section>
+            <!-- <section class="l-container__single c-grid__single">
+                <img class="c-image__single--small" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+                <img class="c-image__single--small" src="< echo get_template_directory_uri(); ?>/images/cooked-foods-750073-2.png" alt="ハンバーガーとポテトの画像">
+            </section> -->
 
             <!--リスト数字付き-->
-            <section class="p-list__single c-font__M--regular c-font-size__16 c-LH14375">
+            <!-- <section class="p-list__single c-font__M--regular c-font-size__16 c-LH14375">
                 <ol class="u-margin__B20 u-padding__L16">
                     <li>リストリストリスト</li>
                     <li>リストリストリスト</li>
@@ -72,10 +72,10 @@
                     <li>リストリストリスト</li>
                     <li>リストリストリスト</li>
                 </ol>
-            </section>
+            </section> -->
 
             <!--リスト数字なし-->
-            <section class="p-list__single c-font__M--regular c-font-size__16 c-LH14375">
+            <!-- <section class="p-list__single c-font__M--regular c-font-size__16 c-LH14375">
                 <ul class="u-margin__B20 ">
                     <li>リストリストリスト</li>
                     <li>リストリストリスト</li>
@@ -88,10 +88,10 @@
                     <li>リストリストリスト</li>
                     <li>リストリストリスト</li>
                 </ul>
-            </section>
+            </section> -->
 
             <!--コード-->
-            <section class="p-list__single-code c-bg-color--light-gray">
+            <!-- <section class="p-list__single-code c-bg-color--light-gray">
                 <pre class="p-list__single-code-text">
                     <code>
                         
@@ -103,10 +103,10 @@
             &lt;/html&gt;
                     </code>
                 </pre>
-            </section>
+            </section> -->
 
             <!--表-->
-            <table class="p-table c-font__M--regular c-font-size__16 c-LH14375 c-color__brown c-border">
+            <!-- <table class="p-table c-font__M--regular c-font-size__16 c-LH14375 c-color__brown c-border">
                 <tr>
                     <td class="c-border__table p-table__td u-width__single-table-left">テーブル</td>
                     <td class="c-border__table p-table__td">テーブル</td>
@@ -123,14 +123,14 @@
                     <td class="c-border__table p-table__td u-width__single-table-left">テーブル</td>
                     <td class="c-border__table p-table__td">テーブル</td>
                 </tr>
-            </table>
+            </table> -->
 
             <!--ボタン-->
-            <button class="p-section__single--button c-button--gradation c-font__M--bold c-font-size__16 c-color__dark-brown c-round--20 c-border">ボタン
+            <!-- <button class="p-section__single--button c-button--gradation c-font__M--bold c-font-size__16 c-color__dark-brown c-round--20 c-border">ボタン
                 <a class="p-section__single--button-a" href="#"></a>
             </button>
 
-            <p class="c-font__M--bold c-font-size__16 c-color__dark-brown u-margin__L20">boldboldboldboldboldboldbold</p>
+            <p class="c-font__M--bold c-font-size__16 c-color__dark-brown u-margin__L20">boldboldboldboldboldboldbold</p> -->
 
             <!--ページネーション-->
             <!-- <ul class="p-pagination">

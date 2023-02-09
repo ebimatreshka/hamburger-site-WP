@@ -84,3 +84,16 @@ add_action('pre_get_posts', function ($query) {
         return;
     }
 });
+
+//archiveのcardの本文抜粋を取得する関数
+function get_the_custom_excerpt($content, $length)
+{
+    $length = ($length ? $length : 107); //デフォルトの文字数
+    $content =  strip_shortcodes($content); //ショートコード削除
+    $content =  preg_replace('/.+/is', "", $content); //moreタグ以降削除
+    $content =  strip_tags($content, "
+"); //pタグ以外のタグの除去
+    $content =  str_replace(" ", "", $content); //特殊文字の削除（今回はスペースのみ）
+    $content =  mb_substr($content, 0, $length); //文字列を指定した長さで切り取る
+    return $content;
+}

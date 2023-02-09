@@ -2293,6 +2293,162 @@ div[class=menu] > ul > li a {
   }
 }
 
+.l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h2 {
+  margin-top: 8vw;
+  margin-left: 5.3333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h2 {
+    margin-top: 7.1942446043vw;
+    margin-left: 7.1942446043vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h2 {
+    margin-top: 3.125vw;
+    margin-left: 5.2083333333vw;
+  }
+}
+
+.l-main__single.p-main__single.c-grid__main.c-bg-color--egg > p {
+  margin-top: 8vw;
+  margin-right: 5.3333333333vw;
+  margin-left: 5.3333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > p {
+    margin-top: 7.1942446043vw;
+    margin-right: 7.1942446043vw;
+    margin-left: 7.1942446043vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > p {
+    margin-top: 3.125vw;
+    margin-right: 5.2083333333vw;
+    margin-left: 5.2083333333vw;
+  }
+}
+
+.l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h3 {
+  margin-top: 9.0666666667vw;
+  margin-left: 5.3333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h3 {
+    margin-top: 7.1942446043vw;
+    margin-left: 7.1942446043vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h3 {
+    margin-top: 3.125vw;
+    margin-left: 5.2083333333vw;
+  }
+}
+
+.l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h4 {
+  margin-top: 8.2666666667vw;
+  margin-left: 5.3333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h4 {
+    margin-top: 7.1942446043vw;
+    margin-left: 7.1942446043vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h4 {
+    margin-top: 3.125vw;
+    margin-left: 5.2083333333vw;
+  }
+}
+
+.wp-block-quote {
+  display: block;
+  margin: 0 auto;
+  background-color: #F5F5F5;
+  margin-top: 8vw;
+  margin-right: 5.3333333333vw;
+  margin-bottom: 8vw;
+  margin-left: 5.3333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .wp-block-quote {
+    margin-top: 7.1942446043vw;
+    margin-right: 7.1942446043vw;
+    margin-bottom: 7.1942446043vw;
+    margin-left: 7.1942446043vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .wp-block-quote {
+    margin-top: 3.125vw;
+    margin-bottom: 3.125vw;
+    width: 70.46875vw;
+    height: 16.6145833333vw;
+  }
+}
+.wp-block-quote p {
+  padding-top: 8vw;
+  padding-right: 4.2666666667vw;
+  padding-bottom: 8vw;
+  padding-left: 5.3333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .wp-block-quote p {
+    padding-top: 5.9952038369vw;
+    padding-right: 6.7146282974vw;
+    padding-bottom: 7.1942446043vw;
+    padding-left: 5.9952038369vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .wp-block-quote p {
+    padding-top: 2.6041666667vw;
+    padding-right: 3.125vw;
+    padding-bottom: 3.125vw;
+    padding-left: 2.6041666667vw;
+  }
+}
+.wp-block-quote cite {
+  padding-bottom: 8vw;
+  margin-left: 5.3333333333vw;
+}
+@media screen and (min-width: 600px) {
+  .wp-block-quote cite {
+    padding-bottom: 7.1942446043vw;
+    margin-left: 5.9952038369vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .wp-block-quote cite {
+    padding-left: 2.6041666667vw;
+    margin-left: 2.6041666667vw;
+  }
+}
+
+.wp-image-68 {
+  -o-object-fit: cover;
+     object-fit: cover;
+  -o-object-position: 100% 100%;
+     object-position: 100% 100%;
+  width: 89.3333333333vw;
+  height: 33.0666666667vw;
+}
+@media screen and (min-width: 600px) {
+  .wp-image-68 {
+    width: 85.6115107914vw;
+    height: 31.654676259vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .wp-image-68 {
+    width: 70.46875vw;
+    height: 26.0416666667vw;
+  }
+}
+
 .u-margin__title--menu {
   display: none;
 }
