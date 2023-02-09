@@ -370,7 +370,7 @@ div[class="menu"] > ul {
         }
     }
 }
-
+    //h2の下
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > p {
     margin-top          : m.sp-vw( 30 );
     margin-right        : m.sp-vw( 20 );
@@ -386,7 +386,7 @@ div[class="menu"] > ul {
         }
     }
 }
-
+    //h3
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h3 {
     margin-top         : m.sp-vw( 34 );
     margin-left        : m.sp-vw( 20 );
@@ -399,7 +399,7 @@ div[class="menu"] > ul {
         }
     }
 }
-
+    //h4
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h4 {
     margin-top         : m.sp-vw( 31 );
     margin-left        : m.sp-vw( 20 );
@@ -412,7 +412,7 @@ div[class="menu"] > ul {
         }
     }
 }
-
+    //
 .wp-block-quote {
     display              : block;
     margin               : 0 auto;
@@ -466,17 +466,17 @@ div[class="menu"] > ul {
 }
 
 
-.wp-image-68 {
-    object-fit: cover;
-    object-position: 100% 100%;
-    width: m.sp-vw( 335 );
-    height: m.sp-vw( 124 );
-    @include m.tablet {
-        width: m.tb-vw( 714 );
-        height: m.tb-vw( 264 );
-        @include m.pc {
-            width: m.pc-vw( 1353 );
-            height: m.pc-vw( 500 );
+    &--big {
+        object-fit: cover;
+        object-position: 100% 100%;
+        width: m.sp-vw( 335 );
+        height: m.sp-vw( 124 );
+        @include m.tablet {
+            width: m.tb-vw( 714 );
+            height: m.tb-vw( 264 );
+            @include m.pc {
+                width: m.pc-vw( 1353 );
+                height: m.pc-vw( 500 );
+            }
         }
     }
-}

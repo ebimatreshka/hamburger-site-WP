@@ -97,3 +97,13 @@ function get_the_custom_excerpt($content, $length)
     $content =  mb_substr($content, 0, $length); //文字列を指定した長さで切り取る
     return $content;
 }
+
+//ショップ情報とヒストリーを検索結果から除外
+function search_pre_get_posts($query)
+{
+    if ($query->is_search && !is_admin()) {
+        $query->set('post__not_in', array(19, 79));
+    }
+    return $query;
+}
+add_action('pre_get_posts', 'search_pre_get_posts');
