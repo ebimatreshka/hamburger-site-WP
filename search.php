@@ -29,8 +29,10 @@
                 <div class="p-section__card__about--wrapper c-bg-color--dark-brown">
                     <h2 class="p-section__card__title c-font__M--bold c-font-size__20 c-color__white"><?php echo get_the_title(); ?></h2>
 
-                    <h3 class="p-section__card__heading c-font__M--bold c-font-size__16 c-color__white">小見出しが入ります</h3>
-                    <p class="p-section__card__text c-font__M--regular c-font-size__16 c-color__white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p>
+                    <?php the_excerpt(); ?>
+
+                    <!-- <h3 class="p-section__card__heading c-font__M--bold c-font-size__16 c-color__white">小見出しが入ります</h3>
+                    <p class="p-section__card__text c-font__M--regular c-font-size__16 c-color__white">テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。テキストが入ります。</p> -->
                     <button onclick="location.href='<?php the_permalink(); ?>'" class="p-section__card__button c-button__white c-round--35 c-font__M--bold c-font-size__16 c-color__brown c-bg-color--white c-button--white c-LH--106"><a href="<?php the_permalink(); ?>"></a>詳しく見る</button>
                 </div>
             </section>
@@ -44,7 +46,6 @@
     <!--ページネーション-->
     <div class="wp-pagination__wapper">
         <ul class="p-pagination">
-            <li class="p-pagination__item p-pagination__item--hide c-font__R--bold u-margin__R193">page 1/10</li>
             <!-- 拡張機能で表示させる -->
             <?php wp_pagenavi(); ?>
         </ul>

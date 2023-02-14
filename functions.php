@@ -107,3 +107,10 @@ function search_pre_get_posts($query)
     return $query;
 }
 add_action('pre_get_posts', 'search_pre_get_posts');
+
+//抜粋の長さの変更
+function custom_excerpt_length($length)
+{
+    return 55;
+}
+add_filter('excerpt_length', 'custom_excerpt_length', 999);

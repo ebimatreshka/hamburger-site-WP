@@ -1754,7 +1754,6 @@ img {
   }
 }
 .p-section__card__button {
-  margin-top: 10.6666666667vw;
   margin-right: 24.8vw;
   margin-bottom: 11.6533333333vw;
   margin-left: 21.3066666667vw;
@@ -1765,7 +1764,6 @@ img {
 }
 @media screen and (min-width: 600px) {
   .p-section__card__button {
-    margin-top: 4.8561151079vw;
     margin-right: 11.9664268585vw;
     margin-bottom: 4.0167865707vw;
     margin-left: 13.7529976019vw;
@@ -2207,6 +2205,24 @@ div[class=menu] > ul > li a {
   }
 }
 
+.p-section__card__image {
+  width: 89.6293333333vw;
+  margin: 0 0;
+}
+@media screen and (min-width: 600px) {
+  .p-section__card__image {
+    width: 45.3573141487vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .p-section__card__image {
+    width: 35.2604166667vw;
+  }
+}
+.p-section__card__image--blue {
+  width: 100%;
+}
+
 .p-section__archiveAbout--article h2 {
   margin-top: 8vw;
   margin-left: 8vw;
@@ -2226,6 +2242,7 @@ div[class=menu] > ul > li a {
   }
 }
 .p-section__archiveAbout--article p {
+  min-height: 30.4vw;
   margin-top: 8vw;
   margin-right: 4.8vw;
   margin-bottom: 5.0666666667vw;
@@ -2234,6 +2251,7 @@ div[class=menu] > ul > li a {
 }
 @media screen and (min-width: 600px) {
   .p-section__archiveAbout--article p {
+    min-height: 13.6690647482vw;
     font-size: 1.9184652278vw;
     margin-top: 2.9976019185vw;
     margin-right: 4.1966426859vw;
@@ -2243,6 +2261,7 @@ div[class=menu] > ul > li a {
 }
 @media screen and (min-width: 1025px) {
   .p-section__archiveAbout--article p {
+    min-height: 3.8020833333vw;
     font-size: 0.8333333333vw;
     margin-right: 5.2083333333vw;
     margin-bottom: 3.6979166667vw;
@@ -2250,44 +2269,27 @@ div[class=menu] > ul > li a {
   }
 }
 
-.p-section__card__about--wrapper h2:nth-child(2n) {
+.p-section__card__about--wrapper p {
+  height: 34.6666666667vw;
   color: #FFFFFF;
   padding-top: 6.4vw;
-  margin-left: 4.5333333333vw;
-}
-@media screen and (min-width: 600px) {
-  .p-section__card__about--wrapper h2:nth-child(2n) {
-    padding-top: 2.8776978417vw;
-    margin-left: 4.1606714628vw;
-  }
-}
-@media screen and (min-width: 600px) and (min-width: 1025px) {
-  .p-section__card__about--wrapper h2:nth-child(2n) {
-    font-size: 1.25vw;
-    line-height: 1.5;
-    padding-top: 2.4479166667vw;
-    margin-left: 3.28125vw;
-  }
-}
-
-.p-section__card__about--wrapper p {
-  color: #FFFFFF;
-  padding-top: 2.6666666667vw;
   margin-right: 19.4933333333vw;
   margin-left: 4.5333333333vw;
   line-height: 1.4375;
 }
 @media screen and (min-width: 600px) {
   .p-section__card__about--wrapper p {
-    padding-top: 1.1990407674vw;
+    height: 26.3788968825vw;
+    padding-top: 2.8776978417vw;
     margin-right: 7.0743405276vw;
     margin-left: 4.1606714628vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
   .p-section__card__about--wrapper p {
+    height: 8.8541666667vw;
     font-size: 0.8333333333vw;
-    padding-top: 0.8854166667vw;
+    padding-top: 2.4479166667vw;
     margin-right: 5.4166666667vw;
     margin-left: 3.28125vw;
   }
@@ -2428,24 +2430,24 @@ div[class=menu] > ul > li a {
   }
 }
 
-.wp-image-68 {
-  -o-object-fit: cover;
-     object-fit: cover;
-  -o-object-position: 100% 100%;
-     object-position: 100% 100%;
-  width: 89.3333333333vw;
-  height: 33.0666666667vw;
+.block-editor-rich-text__editable.wp-block-table__cell-content.rich-text {
+  border: solid 1px;
+  padding-top: 7.4666666667vw;
+  padding-bottom: 7.2vw;
+  padding-left: 8vw;
 }
 @media screen and (min-width: 600px) {
-  .wp-image-68 {
-    width: 85.6115107914vw;
-    height: 31.654676259vw;
+  .block-editor-rich-text__editable.wp-block-table__cell-content.rich-text {
+    padding-top: 3.3573141487vw;
+    padding-bottom: 3.2374100719vw;
+    padding-left: 3.5971223022vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
-  .wp-image-68 {
-    width: 70.46875vw;
-    height: 26.0416666667vw;
+  .block-editor-rich-text__editable.wp-block-table__cell-content.rich-text {
+    padding-top: 1.4583333333vw;
+    padding-bottom: 1.40625vw;
+    padding-left: 1.5625vw;
   }
 }
 
