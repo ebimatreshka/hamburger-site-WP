@@ -432,24 +432,25 @@ div[class="menu"] > ul {
         }
     }
 }
-    //
+    //囲まれたテキスト
 .wp-block-quote {
     display              : block;
     margin               : 0 auto;
     background-color: v.$color-bg-light-gray;   //single-page
     margin-top           : m.sp-vw( 30 );
-    margin-right         : m.sp-vw( 20 );
+    margin-right         : auto;
     margin-bottom        : m.sp-vw( 30 );
-    margin-left          : m.sp-vw( 20 );
+    margin-left          : auto;
     @include m.tablet {
+        width: 85.6%;
         margin-top       : m.tb-vw( 60 );
-        margin-right     : m.tb-vw( 60 );
+        // margin-right     : m.tb-vw( 60 );
         margin-bottom    : m.tb-vw( 60 );
-        margin-left      : m.tb-vw( 60 );
+        // margin-left      : m.tb-vw( 60 );
         @include m.pc {
             margin-top   : m.pc-vw( 60 );
             margin-bottom: m.pc-vw( 60);
-            width        : m.pc-vw( 1353 );
+            width        : 87%;
             height       : m.pc-vw( 319 );
         }
     }
@@ -500,4 +501,38 @@ div[class="menu"] > ul {
             padding-left: m.pc-vw( 30 );
         }
     }
+}
+    //ハンバーガーの一番大きい写真の位置
+img.wp-image-109 {
+    width: 86.6%;
+    margin-top: m.sp-vw( 30 );        
+    margin-right: auto;
+    margin-bottom: m.sp-vw( 30 );
+    margin-left: auto;
+    @include m.tablet {
+        width: 85.6%;
+        margin-top: m.sp-vw( 60 );        
+        // margin-right: auto;
+        margin-bottom: m.sp-vw( 60 );
+        // margin-left: auto;   
+    @include m.pc {
+        width: 87%;
+        margin-top: m.pc-vw( 60 );        
+        // margin-right: auto;
+        margin-bottom: m.pc-vw( 60 );
+        // margin-left: auto;
+        }
+    }
+}
+
+    //9つの画像
+.is-layout-flex.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped > .wp-block-image.size-large {
+    @include m.pc {
+        width: m.pc-vw( 438 );
+        height: m.pc-vw( 257 );
+    }
+}
+    //9つの画像サイズ
+.wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
+    width: 100%;
 }

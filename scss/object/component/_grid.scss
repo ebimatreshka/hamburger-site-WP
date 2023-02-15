@@ -50,7 +50,8 @@
 }
 
 //single-pageのタイル型
-.c-grid__single {
+// .c-grid__single {
+.is-layout-flex.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped {
     display                  : grid;
         grid-template-rows       : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;   //行
         grid-template-columns    : 1fr;  //列

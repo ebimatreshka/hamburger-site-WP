@@ -33,7 +33,8 @@
 }
 
 //single-pageのタイル型
-.l-container__single {
+// .l-container__single {
+.is-layout-flex.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped {
     margin-top: m.sp-vw( 30 );
     margin-right: m.sp-vw( 20 );
     margin-left: m.sp-vw( 20 );
