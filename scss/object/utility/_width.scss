@@ -3,7 +3,9 @@
 //レスポンシブ
 @use "./../../foundation/mixin" as m;
 
-.u-width__single-table-left {
+//singleの表の幅
+// .u-width__single-table-left {
+tr > td:nth-child(odd) { 
     width: 40%;
     @include m.tablet {
         @include m.pc {

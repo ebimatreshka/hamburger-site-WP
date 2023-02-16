@@ -455,6 +455,7 @@ div[class="menu"] > ul {
         }
     }
     p {
+        line-height: 1.4375;
         padding-top           : m.sp-vw( 30 );
         padding-right         : m.sp-vw( 16 );
         padding-bottom        : m.sp-vw( 30 );
@@ -525,6 +526,16 @@ img.wp-image-109 {
     }
 }
 
+    //2,3個目の画像
+// .wp-block-media-text__media > .wp-image-109.size-full {
+//     margin: 0;
+//     width: 84.6%;
+// }
+// .wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-top > .wp-block-media-text__content.wp-block-media-text__content {
+//     padding: 0;
+// }
+
+
     //9つの画像
 .is-layout-flex.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped > .wp-block-image.size-large {
     @include m.pc {
@@ -535,4 +546,34 @@ img.wp-image-109 {
     //9つの画像サイズ
 .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
     width: 100%;
+}
+
+    //表のフォントなど
+.wp-block-table {
+    font-size        : m.sp-vw( 16 );
+    @include m.tablet {
+        font-size    : m.tb-vw( 16 );
+        @include m.pc {
+        font-size: m.pc-vw( 16 );
+        }
+    }
+}
+
+
+
+.wp-block-table > table > tbody > tr > td {
+    line-height: 1.4375;
+    padding-top: m.sp-vw( 28 );
+    padding-bottom: m.sp-vw( 27 );
+    padding-left: m.sp-vw( 30 );
+    @include m.tablet {
+        padding-top: m.tb-vw( 28 );
+        padding-bottom: m.tb-vw( 27 );
+        padding-left: m.tb-vw( 30 );
+    @include m.pc {
+            padding-top: m.pc-vw( 28 );
+            padding-bottom: m.pc-vw( 27 );
+            padding-left: m.pc-vw( 30 );
+        }
+    }
 }

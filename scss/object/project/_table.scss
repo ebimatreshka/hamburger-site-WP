@@ -4,20 +4,23 @@
 @use "./../../foundation/mixin" as m;
 
 //single-page table
-.p-table {
+// .p-table {
+.wp-block-table {
     border-collapse: collapse; //tableの線を一重に
     background-color: v.$color-white;
     width: m.sp-vw( 335 );
     margin-top: m.sp-vw( 30 );
-    margin-left: m.sp-vw( 20 );
+    // margin-left: m.sp-vw( 20 );
+    margin-left: auto;
+    margin-right: auto;
     @include m.tablet {
         width: m.tb-vw( 714 );
         margin-top: m.tb-vw( 60 );
-        margin-left: m.tb-vw( 60 );
     @include m.pc {
             width: m.pc-vw( 1358 );
             margin-top: m.pc-vw( 50 );
-            margin-left: m.pc-vw( 100 );
+            margin-bottom: m.pc-vw( 60 );
+            // margin-left: m.pc-vw( 100 );
         }
     }
     &__td {

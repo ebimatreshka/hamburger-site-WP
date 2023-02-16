@@ -76,11 +76,15 @@
 }
 
 //single-page listの間
-.u-margin__B20 {
+// .u-margin__B20 {
+.l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ul > li > ul,ol {
+    margin-top: m.sp-vw( 20 );
     margin-bottom: m.sp-vw( 20 );
     @include m.tablet {
+        margin-top: m.tb-vw( 20 );        
         margin-bottom: m.tb-vw( 20 );
         @include m.pc {
+            margin-top: m.pc-vw( 20 );
             margin-bottom: m.pc-vw( 20 );
         }
     }

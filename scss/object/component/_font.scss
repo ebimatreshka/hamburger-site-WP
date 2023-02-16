@@ -39,7 +39,7 @@
         @include m.tablet {
             font-size    : m.tb-vw( 16 );
             @include m.pc {
-                font-size: m.pc-vw( 16 );
+            font-size: m.pc-vw( 16 );
             }
         }
     }

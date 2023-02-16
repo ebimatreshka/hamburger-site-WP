@@ -3,12 +3,16 @@
 //レスポンシブ
 @use "./../../foundation/mixin" as m;
 
-.u-padding__L16 {
-    padding-left: m.sp-vw( 16 );
+// .u-padding__L16 {
+.l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ul {
+        padding-left: m.sp-vw( 16 );
+        margin-bottom: m.sp-vw( 40 );
     @include m.tablet {
         padding-left: m.tb-vw( 16 );
+        margin-bottom: m.tb-vw( 40 );
         @include m.pc {
             padding-left: m.pc-vw( 16 );
+            margin-bottom: m.pc-vw( 40 );
         }
     }
 }
