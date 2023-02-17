@@ -1246,6 +1246,11 @@ img {
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ol {
   list-style-type: none;
 }
+@media screen and (min-width: 600px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ol {
+    margin-left: 12.3vw;
+  }
+}
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ol > li > ol {
   list-style-type: none;
   padding-left: 4.2666666667vw;
@@ -2564,6 +2569,7 @@ img.wp-image-109 {
 @media screen and (min-width: 600px) {
   .wp-block-table {
     font-size: 1.9184652278vw;
+    margin-bottom: 7.1942446043vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
@@ -2581,7 +2587,7 @@ img.wp-image-109 {
 @media screen and (min-width: 600px) {
   .wp-block-table > table > tbody > tr > td {
     padding-top: 3.3573141487vw;
-    padding-bottom: 3.2374100719vw;
+    padding-bottom: 7.1942446043vw;
     padding-left: 3.5971223022vw;
   }
 }
@@ -2686,6 +2692,7 @@ img.wp-image-109 {
   .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ul > li > ul, ol {
     margin-top: 2.3980815348vw;
     margin-bottom: 2.3980815348vw;
+    margin-left: 2vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {

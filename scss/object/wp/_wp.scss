@@ -586,6 +586,7 @@ img.wp-image-109 {
     font-size        : m.sp-vw( 16 );
     @include m.tablet {
         font-size    : m.tb-vw( 16 );
+        margin-bottom: m.tb-vw( 60 );
         @include m.pc {
         font-size: m.pc-vw( 16 );
         }
@@ -601,7 +602,7 @@ img.wp-image-109 {
     padding-left: m.sp-vw( 30 );
     @include m.tablet {
         padding-top: m.tb-vw( 28 );
-        padding-bottom: m.tb-vw( 27 );
+        padding-bottom: m.tb-vw( 60 );
         padding-left: m.tb-vw( 30 );
     @include m.pc {
             padding-top: m.pc-vw( 28 );

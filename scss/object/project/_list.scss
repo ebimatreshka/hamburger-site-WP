@@ -40,6 +40,9 @@
 //リストの数字を取る
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ol {
     list-style-type: none;
+    @include m.tablet {
+        margin-left: 12.3vw;
+    }
     > li > ol {
         list-style-type: none;        
         padding-left: m.sp-vw( 16 );

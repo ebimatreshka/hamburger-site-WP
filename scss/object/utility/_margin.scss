@@ -83,6 +83,7 @@
     @include m.tablet {
         margin-top: m.tb-vw( 20 );        
         margin-bottom: m.tb-vw( 20 );
+        margin-left: 2vw;
         @include m.pc {
             margin-top: m.pc-vw( 20 );
             margin-bottom: m.pc-vw( 20 );
