@@ -2419,6 +2419,7 @@ div[class=menu] > ul > li a {
 }
 @media screen and (min-width: 600px) {
   .wp-block-quote {
+    max-height: 53.2374100719vw;
     width: 85.6%;
     margin-top: 7.1942446043vw;
     margin-bottom: 7.1942446043vw;
@@ -2433,6 +2434,7 @@ div[class=menu] > ul > li a {
   }
 }
 .wp-block-quote p {
+  display: block;
   line-height: 1.4375;
   padding-top: 8vw;
   padding-right: 4.2666666667vw;
@@ -2456,6 +2458,7 @@ div[class=menu] > ul > li a {
   }
 }
 .wp-block-quote cite {
+  display: block;
   padding-bottom: 8vw;
   margin-left: 5.3333333333vw;
 }
@@ -2503,8 +2506,8 @@ img.wp-image-109 {
 @media screen and (min-width: 600px) {
   img.wp-image-109 {
     width: 85.6%;
-    margin-top: 16vw;
-    margin-bottom: 16vw;
+    margin-top: 0vw;
+    margin-bottom: 0vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
@@ -2523,6 +2526,11 @@ img.wp-image-109 {
 }
 .wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-top .wp-block-media-text__content {
   padding-right: 0;
+}
+@media screen and (min-width: 600px) {
+  .wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-top .wp-block-media-text__content {
+    padding-right: 2.5179856115vw;
+  }
 }
 
 @media screen and (min-width: 1025px) {

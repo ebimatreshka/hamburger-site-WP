@@ -442,6 +442,7 @@ div[class="menu"] > ul {
     margin-bottom        : m.sp-vw( 30 );
     margin-left          : auto;
     @include m.tablet {
+        max-height: m.tb-vw( 444 );
         width: 85.6%;
         margin-top       : m.tb-vw( 60 );
         // margin-right     : m.tb-vw( 60 );
@@ -455,6 +456,7 @@ div[class="menu"] > ul {
         }
     }
     p {
+        display: block;
         line-height: 1.4375;
         padding-top           : m.sp-vw( 30 );
         padding-right         : m.sp-vw( 16 );
@@ -474,6 +476,7 @@ div[class="menu"] > ul {
         }
     }
     cite {
+        display: block;
         padding-bottom      : m.sp-vw( 30 );
         margin-left         : m.sp-vw( 20 );
     @include m.tablet {
@@ -512,9 +515,9 @@ img.wp-image-109 {
     margin-left: auto;
     @include m.tablet {
         width: 85.6%;
-        margin-top: m.sp-vw( 60 );        
+        margin-top: m.sp-vw( 0 );        
         // margin-right: auto;
-        margin-bottom: m.sp-vw( 60 );
+        margin-bottom: m.sp-vw( 0 );
         // margin-left: auto;   
     @include m.pc {
         width: 87%;
@@ -546,6 +549,9 @@ img.wp-image-109 {
     }
     .wp-block-media-text__content {
         padding-right: 0;
+        @include m.tablet {
+            padding-right: m.tb-vw( 21 );
+        }
     }
 }
 //3個目の画像の配置
