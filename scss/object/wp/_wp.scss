@@ -544,12 +544,18 @@ img.wp-image-109 {
         display: grid;
         grid-template-columns: 43% 1fr;
     }
+    .wp-block-media-text__content {
+        padding-right: 0;
+    }
 }
 //3個目の画像の配置
 .wp-block-media-text.alignwide.has-media-on-the-right.is-stacked-on-mobile.is-vertically-aligned-top.margin {
     @include m.pc {
         display: grid;
         grid-template-columns: 1fr 43%;
+    }
+    .wp-block-media-text__content {
+        padding-left: 0;
     }
 }
 //2,3個目の画像をfigureの幅に合わせる
