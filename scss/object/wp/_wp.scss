@@ -435,6 +435,7 @@ div[class="menu"] > ul {
     //囲まれたテキスト
 .wp-block-quote {
     display              : block;
+    width: 89%;
     margin               : 0 auto;
     background-color: v.$color-bg-light-gray;   //single-page
     margin-top           : m.sp-vw( 30 );
@@ -508,10 +509,10 @@ div[class="menu"] > ul {
 }
 //ハンバーガーの一番大きい写真の位置
 img.wp-image-109 {
-    width: 86.6%;
-    margin-top: m.sp-vw( 30 );        
+    width: 89%;
+    // margin-top: m.sp-vw( 30 );        
     margin-right: auto;
-    margin-bottom: m.sp-vw( 30 );
+    // margin-bottom: m.sp-vw( 30 );
     margin-left: auto;
     @include m.tablet {
         width: 85.6%;
@@ -541,21 +542,60 @@ img.wp-image-109 {
         //         margin-right: 0;
         //     }
         // }
+
+// .l-main__single > .is-stacked-on-mobile.wp-block-media-text
 //2個目の画像の配置
-.wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-top {
+// .l-main__single > .wp-block-media-text.alignwide.is-stacked-on-mobile.is-vertically-aligned-top {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     @include m.pc {
+//         grid-template-columns: 43% 1fr;
+//     }
+//     .wp-block-media-text__content {
+//         padding-right: 0;
+//         @include m.tablet {
+//             padding-right: m.tb-vw( 21 );
+//         }
+//     }
+// }
+.l-main__single > .is-stacked-on-mobile.wp-block-media-text {
+    display: flex;
     @include m.pc {
-        display: grid;
         grid-template-columns: 43% 1fr;
     }
-    .wp-block-media-text__content {
-        padding-right: 0;
+    .wp-block-media-text__media {
+        width: 43%;
         @include m.tablet {
-            padding-right: m.tb-vw( 21 );
+            width: 42%;
+        }
+        @include m.pc {
+            width: 43%;
+        }
+    }
+    .wp-block-media-text__content {
+        font-family: 'M PLUS 1p', sans-serif;
+        padding-right: 0;
+        padding-left: m.sp-vw( 10 );
+        height: auto;
+        width: 57%;
+        @include m.tablet {
+            // padding-right: m.tb-vw( 21 );
+            width: 58%;
+        }
+        @include m.pc {
+            width: 57%;
         }
     }
 }
+
+
+//.l-main__single > .is-stacked-on-mobile.wp-block-media-text
 //3個目の画像の配置
 .wp-block-media-text.alignwide.has-media-on-the-right.is-stacked-on-mobile.is-vertically-aligned-top.margin {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+
     @include m.pc {
         display: grid;
         grid-template-columns: 1fr 43%;
@@ -579,6 +619,25 @@ img.wp-image-109 {
     //9つの画像サイズ
 .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
     width: 100%;
+}
+
+// .wp-block-media-text.alignwide {
+//     display: grid;
+//     grid-template-columns: 1fr 1fr;
+//     gap: 20px;
+// }
+
+//9つの画像のgrid設定
+.is-layout-flex.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    @include m.tablet {
+        grid-template-columns: 1fr 1fr;
+    }
+    @include m.pc {
+        grid-template-columns: 1fr 1fr 1fr;
+    }
 }
 
 //表のフォントなど
