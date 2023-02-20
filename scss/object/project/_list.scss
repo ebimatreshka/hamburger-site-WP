@@ -43,6 +43,9 @@
     @include m.tablet {
         margin-left: 12.3vw;
     }
+    @include m.pc {
+        margin-left: m.pc-vw( 150 );
+    }
     > li > ol {
         list-style-type: none;        
         padding-left: m.sp-vw( 16 );

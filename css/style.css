@@ -1251,6 +1251,11 @@ img {
     margin-left: 12.3vw;
   }
 }
+@media screen and (min-width: 1025px) {
+  .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ol {
+    margin-left: 7.8125vw;
+  }
+}
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ol > li > ol {
   list-style-type: none;
   padding-left: 4.2666666667vw;
