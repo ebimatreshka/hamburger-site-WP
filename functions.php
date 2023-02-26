@@ -1,4 +1,6 @@
+
 <?php
+
 //テーマの設定
 function custom_theme_support()
 {
@@ -62,7 +64,7 @@ function hamburger_script()
     //M+PLUS+1p Roboto読み込み
     wp_enqueue_style("M+PLUS+1p", "https://fonts.googleapis.com/css2?family=M+PLUS+1p:wght@400;700&family=Roboto:wght@400;700&display=swap", array(), "");
     //Font Awesome読み込み
-    wp_enqueue_style("font-awesome", "//cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css", array(), "5.15.4");
+    // wp_enqueue_script("font-awesome", "https://kit.fontawesome.com/8407ac2d80.js", array(), "5.15.4");
     //cssフォルダの中のstyle.css読み込み(スタイリングを反映させるため)
     wp_enqueue_style("css", get_template_directory_uri() . "/css/style.css", array(), "");
     //style.css読み込み

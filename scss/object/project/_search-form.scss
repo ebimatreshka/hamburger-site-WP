@@ -11,21 +11,24 @@
 
     //虫眼鏡の画像を擬似要素で
     &::before {
-        content      : \f002;
+        content      :url(../images/magnifying-glass-solid.svg);
         font-family  : "Font Awesome 5 Free";
         font-weight  : 700;
+        width: m.sp-vw(24);
         font-size    : 5vw;
         display      : block;
         line-height  : 1px; //上下の余白が消えるため、高さが揃う仕組み(0pxでもOK)
-        margin       : 6.5vw -7.27vw 0 0;
+        margin       : 3.5vw -8.27vw 0 0;
         z-index      : 10;
         @include m.tablet {
+            width: m.tb-vw(24);
             font-size: 3vw;
-            margin   : 3vw -4.68vw 0 0;
+            margin   : 1.7vw -4.68vw 0 0;
         }
         @include m.pc {
+            width: m.pc-vw(24);
             font-size: 1.5vw;
-            margin   : 1.3vw -2.5vw 0 0;
+            margin   : 0.7vw -2vw 0 0;
         }
     }
 
