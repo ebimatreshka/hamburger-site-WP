@@ -21,7 +21,7 @@
     <?php if (have_posts()) : ?>
         <!-- ループ処理 投稿データがある限り-->
         <?php while (have_posts()) : the_post(); ?>
-            <section class="p-section__card">
+            <section class="p-section__card" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
                 <figure class="p-section__card__image">
                     <!-- 画像サイズをwidth,heightで指定 -->
                     <img class="p-section__card__image--blue" src="<?php the_post_thumbnail_url('medium'); ?>" width="407" height="305" alt="">

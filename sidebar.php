@@ -41,13 +41,14 @@
                 <!-- 管理画面の外観のメニューを表示 -->
                 <!-- サイドメニューの定義 -->
                 <?php
-    wp_nav_menu( 
-        array(
-            "theme_location" => "sidebar-menu",
-            // "menu_class"      => "menu",
-            )
-        );
-        ?>
-        </nav>
-        </article>
+                wp_nav_menu(
+                    array(
+                        "theme_location" => "sidebar-menu",
+                        // "menu_class"      => "menu",
+                    )
+                );
+                ?>
 
+
+            </nav>
+        </article>

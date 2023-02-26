@@ -2,7 +2,7 @@
 <?php get_header(); ?>
 
 <!--main visual-->
-<main class="l-main__single p-main__single c-grid__main c-bg-color--egg">
+<main class="l-main__single p-main__single c-grid__main c-bg-color--egg" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <!-- ループの開始 -->
     <?php if (have_posts()) : ?>
         <?php while (have_posts()) : the_post(); ?>
@@ -11,6 +11,7 @@
             </div>
 
             <?php the_content(); ?>
+            <?php wp_link_pages(); ?>
 
 </main>
 

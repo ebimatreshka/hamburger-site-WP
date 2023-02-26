@@ -3,13 +3,14 @@
 <?php get_header(); ?>
 
 <!--main visual-->
-<main class="l-main__single p-main__single c-grid__main c-bg-color--egg">
+<main class="l-main__single p-main__single c-grid__main c-bg-color--egg" id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
     <div class="p-main-visual__single c-background__page">
         <h1 class="p-main-visual__single--title c-font__R c-title__36 c-title__white"><?php the_title(); ?></h1>
     </div>
 
 
     <?php the_content(); ?>
+
 
 
 </main>

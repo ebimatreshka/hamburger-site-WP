@@ -12,14 +12,30 @@ function custom_theme_support()
     ));
     //アイキャッチ画像の有効化
     add_theme_support("post-thumbnails");
+
     //テーマサポート(管理画面からタイトルタグ登録可能)
     add_theme_support("title-tag");
+
+
     //カスタムメニューの有効化(sidebar)
-    add_theme_support('menus'); //menusとsをつけると複数登録できる
-    register_nav_menus(array(
-        "footer-menu" => "フッター",
-        "sidebar-menu" => "サイドメニュー",
-    ));
+    function register_my_menus()
+    {
+        register_nav_menus(
+            array(
+                'footer-menu' => __('フッター'),
+                'sidebar-menu' => __('サイドメニュー')
+            )
+        );
+    }
+    add_action('init', 'register_my_menus');
+
+
+
+    // add_theme_support('menus'); //menusとsをつけると複数登録できる
+    // register_nav_menus(array(
+    //     "footer-menu" => "フッター",
+    //     "sidebar-menu" => "サイドメニュー",
+    // ));
 }
 //実行
 add_action("after_setup_theme", "custom_theme_support");
@@ -36,6 +52,7 @@ function hamburger_title($title)
 }
 //出力させる
 add_filter("pre_get_document_title", "hamburger_title");
+
 
 // 宣言
 function hamburger_script()
@@ -73,6 +90,14 @@ function my_theme_widgets_init()
     ));
 }
 add_action('widgets_init', 'my_theme_widgets_init');
+
+// dynamic_sidebar()関数を使用してサイドバーを表示
+function theme_name_sidebar()
+{
+    if (is_active_sidebar('sidebar-1')) {
+        dynamic_sidebar('sidebar-1');
+    }
+}
 
 // search.phpのcardの表示件数を設定
 add_action('pre_get_posts', function ($query) {
@@ -114,3 +139,6 @@ function custom_excerpt_length($length)
     return 55;
 }
 add_filter('excerpt_length', 'custom_excerpt_length', 999);
+
+//自動フィードリンクを有効にする テーマにRSSフィードがサポートされる
+add_theme_support('automatic-feed-links');

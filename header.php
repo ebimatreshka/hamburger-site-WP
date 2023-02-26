@@ -15,6 +15,7 @@
 <!--異なるclassを付与し(任意のclassを追加も可能)-->
 
 <body <?php body_class("l-body"); ?>>
+    <?php do_action('wp_body_open'); ?>
     <div class="l-container c-grid">
         <div class="l-container__black"></div>
 
