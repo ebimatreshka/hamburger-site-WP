@@ -6,31 +6,31 @@
 //single
 // .p-list__single {
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ul,ol {
-    margin-top: m.sp-vw( 32 );
-    margin-left: m.sp-vw( 20 );
-    line-height: 1.4375;
-    font-size        : m.sp-vw( 16 );
-    font-family: "M PLUS 1p", sans-serif;
-    font-weight: 400;
+    margin-top         : m.sp-vw( 32 );
+    margin-left        : m.sp-vw( 20 );
+    line-height        : 1.4375;
+    font-size          : m.sp-vw( 16 );
+    font-family        : "M PLUS 1p", sans-serif;
+    font-weight        : 400;
 @include m.tablet {
-        margin-top: m.tb-vw( 60 );
-        margin-left: m.tb-vw( 110 );
-        font-size    : m.tb-vw( 16 );
+        margin-top     : m.tb-vw( 60 );
+        margin-left    : m.tb-vw( 110 );
+        font-size      : m.tb-vw( 16 );
         @include m.pc {
-            margin-top: m.pc-vw( 60 );
+            margin-top : m.pc-vw( 60 );
             margin-left: m.pc-vw( 150 );
-            font-size: m.pc-vw( 16 );
+            font-size  : m.pc-vw( 16 );
         }
     }
 }
 //リストに数字をつける
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ul {
-    list-style-type: decimal;
+    list-style-type         : decimal;
     > li > ul {
-        list-style-type: decimal;
-        padding-left: m.sp-vw( 16 );
+        list-style-type     : decimal;
+        padding-left        : m.sp-vw( 16 );
         @include m.tablet {
-            padding-left: m.tb-vw( 16 );
+            padding-left    : m.tb-vw( 16 );
             @include m.pc{
                 padding-left: m.pc-vw( 16 );
             }
@@ -39,21 +39,21 @@
 }
 //リストの数字を取る
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ol {
-    list-style-type: none;
+    list-style-type         : none;
     @include m.tablet {
-        margin-left: 12.3vw;
+        margin-left         : 12.3vw;
     }
     @include m.pc {
-        margin-left: m.pc-vw( 150 );
+        margin-left         : m.pc-vw( 150 );
     }
     > li > ol {
-        list-style-type: none;        
-        padding-left: m.sp-vw( 16 );
+        list-style-type     : none;        
+        padding-left        : m.sp-vw( 16 );
         @include m.tablet {
-            padding-left: m.tb-vw( 16 );
+            padding-left    : m.tb-vw( 16 );
             @include m.pc{
                 padding-left: m.pc-vw( 16 );
-                margin-left: 0px;
+                margin-left : 0px;
             }
         }
     }
@@ -62,17 +62,17 @@
 
 //single code
 .p-list__single-code {
-    margin-top: m.sp-vw( 30 );
-    margin-right: m.sp-vw( 20 );
-    margin-left: m.sp-vw( 15 );
+    margin-top          : m.sp-vw( 30 );
+    margin-right        : m.sp-vw( 20 );
+    margin-left         : m.sp-vw( 15 );
 @include m.tablet {
-        margin-top: m.tb-vw( 60 );
-        margin-right: m.tb-vw( 60 );
-        margin-left: m.tb-vw( 61 );
+        margin-top      : m.tb-vw( 60 );
+        margin-right    : m.tb-vw( 60 );
+        margin-left     : m.tb-vw( 61 );
     @include m.pc {
-            margin-top: m.pc-vw( 60 );
+            margin-top  : m.pc-vw( 60 );
             margin-right: m.pc-vw( 99 );
-            margin-left: m.pc-vw( 101 );
+            margin-left : m.pc-vw( 101 );
         }
     }
 }

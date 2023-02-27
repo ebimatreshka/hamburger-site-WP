@@ -123,7 +123,6 @@
         }
     }
     &__button {
-        // margin-top               : m.sp-vw( 40 );
         margin-right             : m.sp-vw( 93 );
         margin-bottom            : m.sp-vw( 43.7 );
         margin-left              : m.sp-vw( 79.9 );
@@ -132,7 +131,6 @@
         padding-bottom           : m.sp-vw( 10.5 );
         padding-left             : m.sp-vw( 41.1);
         @include m.tablet {
-            // margin-top           : m.tb-vw( 40.5 );
             margin-right         : m.tb-vw( 99.8 );
             margin-bottom        : m.tb-vw( 33.5 );
             margin-left          : m.tb-vw( 114.7 );
@@ -154,47 +152,47 @@
 .p-section {
     &__single--title-h2,
     &__single--title-h6 {
-        margin-top: m.sp-vw( 30 );
-        margin-left: m.sp-vw( 20 );
+        margin-top         : m.sp-vw( 30 );
+        margin-left        : m.sp-vw( 20 );
         @include m.tablet {
-            margin-top: m.tb-vw( 60 );
-            margin-left: m.tb-vw( 60 );
+            margin-top     : m.tb-vw( 60 );
+            margin-left    : m.tb-vw( 60 );
             @include m.pc {
-                margin-top: m.pc-vw( 60 );
+                margin-top : m.pc-vw( 60 );
                 margin-left: m.pc-vw( 100 );
             }
         }
     }
     &__single--title-h3 {
-        margin-top: m.sp-vw( 34 );
-        margin-left: m.sp-vw( 20 );
+        margin-top         : m.sp-vw( 34 );
+        margin-left        : m.sp-vw( 20 );
         @include m.tablet {
-            margin-top: m.tb-vw( 60 );
-            margin-left: m.tb-vw( 60 );
+            margin-top     : m.tb-vw( 60 );
+            margin-left    : m.tb-vw( 60 );
             @include m.pc {
-                margin-top: m.pc-vw( 60 );
+                margin-top : m.pc-vw( 60 );
                 margin-left: m.pc-vw( 100 );
             }
         }
     }
     &__single--title-h4 {
-        margin-top: m.sp-vw( 31 );
-        margin-left: m.sp-vw( 20 );
+        margin-top         : m.sp-vw( 31 );
+        margin-left        : m.sp-vw( 20 );
         @include m.tablet {
-            margin-top: m.tb-vw( 60 );
-            margin-left: m.tb-vw( 60 );
+            margin-top     : m.tb-vw( 60 );
+            margin-left    : m.tb-vw( 60 );
             @include m.pc {
-                margin-top: m.pc-vw( 60 );
+                margin-top : m.pc-vw( 60 );
                 margin-left: m.pc-vw( 100 );
             }
         }
     }
     &__single--title-h5 {
-        margin-top: m.sp-vw( 37 );
-        margin-left: m.sp-vw( 20 );
+        margin-top        : m.sp-vw( 37 );
+        margin-left       : m.sp-vw( 20 );
         @include m.tablet {
-            margin-top: m.tb-vw( 60 );
-            margin-left: m.tb-vw( 60 );
+            margin-top    : m.tb-vw( 60 );
+            margin-left   : m.tb-vw( 60 );
             @include m.pc {
                 margin-top: m.pc-vw( 60 );
                 margin-left: m.pc-vw( 100 );
@@ -202,62 +200,56 @@
         }
     }
     &__single--text {
-        margin-top: m.sp-vw( 30 );
-        margin-right: m.sp-vw( 20 );
-        margin-left: m.sp-vw( 20 );
+        margin-top          : m.sp-vw( 30 );
+        margin-right        : m.sp-vw( 20 );
+        margin-left         : m.sp-vw( 20 );
     @include m.tablet {
-            margin-top: m.tb-vw( 60 );
-            margin-right: m.tb-vw( 60 );
-            margin-left: m.tb-vw( 60 );
+            margin-top      : m.tb-vw( 60 );
+            margin-right    : m.tb-vw( 60 );
+            margin-left     : m.tb-vw( 60 );
             @include m.pc {
-                margin-top: m.pc-vw( 60 );
+                margin-top  : m.pc-vw( 60 );
                 margin-right: m.pc-vw( 100 );
-                margin-left: m.pc-vw( 100 );
+                margin-left : m.pc-vw( 100 );
             }
         }
     }
 }
 //single ボタン
 .p-section__single--button {
-    width: m.sp-vw( 335 );
-    height: m.sp-vw( 81 );
-    margin-top: m.sp-vw( 30 );
-    // margin-bottom: m.sp-vw( 30 );
-    margin-left: m.sp-vw( 20 );
-    line-height: 21.6vw;
+    width                   : m.sp-vw( 335 );
+    height                  : m.sp-vw( 81 );
+    margin-top              : m.sp-vw( 30 );
+    margin-left             : m.sp-vw( 20 );
+    line-height             : 21.6vw;
 @include m.tablet {
-        width: m.tb-vw( 429 );
-        height: m.tb-vw( 104 );
-        margin-top: m.tb-vw( 60 );
-        // margin-bottom: m.tb-vw( 60 );
-        margin-left: m.tb-vw( 60 );
-        // padding-top: m.pc-vw( 41 );
-        line-height: 12.47vw;
+        width               : m.tb-vw( 429 );
+        height              : m.tb-vw( 104 );
+        margin-top          : m.tb-vw( 60 );
+        margin-left         : m.tb-vw( 60 );
+        line-height         : 12.47vw;
     @include m.pc {
-            width: m.pc-vw( 429 );
-            height: m.pc-vw( 104 );
-            margin-top: m.pc-vw( 60 );
-            // margin-bottom: m.pc-vw( 60 );
-            margin-left: m.pc-vw( 100 );
-            // padding-top: m.pc-vw( 41 );
-            line-height: 5.416vw;
+            width           : m.pc-vw( 429 );
+            height          : m.pc-vw( 104 );
+            margin-top      : m.pc-vw( 60 );
+            margin-left     : m.pc-vw( 100 );
+            line-height     : 5.416vw;
         }
     }
     &-a {
-        width: m.sp-vw( 335 );
-        height: m.sp-vw( 81 );
-        margin-top: -21.6vw;
-        display: block;
+        width             : m.sp-vw( 335 );
+        height            : m.sp-vw( 81 );
+        margin-top        : -21.6vw;
+        display           : block;
         @include m.tablet {
-            width: m.tb-vw( 429 );
-            height: m.tb-vw( 104 );
-            margin-top: -12.6vw;
-            // display: block;
+            width         : m.tb-vw( 429 );
+            height        : m.tb-vw( 104 );
+            margin-top    : -12.6vw;
+            // display    : block;
         @include m.pc {
-                width: m.pc-vw( 429 );
-                height: m.pc-vw( 104 );
+                width     : m.pc-vw( 429 );
+                height    : m.pc-vw( 104 );
                 margin-top: -5.5vw;
-                // display: block;
             }
         }
     }

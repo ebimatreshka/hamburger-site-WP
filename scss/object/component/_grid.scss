@@ -52,19 +52,19 @@
 //single-pageのタイル型
 // .c-grid__single {
 .is-layout-flex.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped {
-    display                  : grid;
+    display                      : grid;
         grid-template-rows       : 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;   //行
         grid-template-columns    : 1fr;  //列
-        row-gap: m.sp-vw( 20 );
+        row-gap                  : m.sp-vw( 20 );
     @include m.tablet {
         grid-template-rows       : 1fr 1fr 1fr 1fr 1fr;   //行
         grid-template-columns    : 1fr 1fr;  //列
-        row-gap: m.tb-vw( 16 );
-        column-gap: m.tb-vw( 20 );
+        row-gap                  : m.tb-vw( 16 );
+        column-gap               : m.tb-vw( 20 );
     @include m.pc {
-            grid-template-rows       : 1fr 1fr 1fr;   //行
-            grid-template-columns    : 1fr 1fr 1fr;  //列
-            gap: m.pc-vw( 20 );
+            grid-template-rows   : 1fr 1fr 1fr;   //行
+            grid-template-columns: 1fr 1fr 1fr;  //列
+            gap                  : m.pc-vw( 20 );
         }
     }
 }

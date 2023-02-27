@@ -6,23 +6,23 @@
 //single-pageの画像と記事のセット
 // .p-article1 {
     .wp-block-media-text {
-    margin-top: m.sp-vw( 30 );
-    margin-right: m.sp-vw( 20 );
-    margin-left: m.sp-vw( 20 );
+    margin-top          : m.sp-vw( 30 );
+    margin-right        : m.sp-vw( 20 );
+    margin-left         : m.sp-vw( 20 );
     @include m.tablet {
-        margin-top: m.tb-vw( 60 );
-        margin-right: m.tb-vw( 60 );
-        margin-left: m.tb-vw( 60 );
+        margin-top      : m.tb-vw( 60 );
+        margin-right    : m.tb-vw( 60 );
+        margin-left     : m.tb-vw( 60 );
     @include m.pc {
-            margin-top: m.pc-vw( 60 );
+            margin-top  : m.pc-vw( 60 );
             margin-right: m.pc-vw( 99 );
-            margin-left: m.pc-vw( 100 );
+            margin-left : m.pc-vw( 100 );
         }
     }
     &__text {
-        margin-left: m.sp-vw( 10 );
+        margin-left        : m.sp-vw( 10 );
         @include m.tablet {
-            margin-left: m.tb-vw( 21 );
+            margin-left    : m.tb-vw( 21 );
             @include m.pc {
                 margin-left: m.pc-vw( 40 );
             }
@@ -34,7 +34,7 @@
 .p-article2 {
     &__text {
         @include m.tablet {
-            margin-right: m.tb-vw( 21 );
+            margin-right    : m.tb-vw( 21 );
             @include m.pc {
                 margin-right: m.pc-vw( 40 );
             }

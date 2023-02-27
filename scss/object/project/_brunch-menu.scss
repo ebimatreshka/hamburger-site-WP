@@ -90,7 +90,7 @@
     &__dl {
         background: rgba(255,255,255,1);
         margin    : m.sp-vw( 20 );
-        opacity: 0.8;
+        opacity   : 0.8;
         @include m.tablet {
             margin: 1.79vw 1.79vw 1.91vw 1.91vw;
         }

@@ -32,9 +32,9 @@
         }
     }
     &__item--hide {
-        display    : none; //sp版で不要な表示を消す
+        display        : none; //sp版で不要な表示を消す
         @include m.tablet {
-            display: block;
+            display    : block;
             line-height: 2.7;
         }
     }

@@ -76,18 +76,15 @@
 }
 
 .p-main-visual__single {
-    position           : relative;
-    height             : m.sp-vw( 225 );
-    display            : flex;
-    flex-direction     : column;
-    justify-content    : center;
+    position       : relative;
+    height         : m.sp-vw( 225 );
+    display        : flex;
+    flex-direction : column;
+    justify-content: center;
     @include m.tablet {
-        height         : m.tb-vw( 500 );
-        // flex-direction : row;
-        // justify-content: flex-start;
-        // align-items    : center;
+        height     : m.tb-vw( 500 );
         @include m.pc {
-            height     : m.pc-vw( 500 );
+            height : m.pc-vw( 500 );
         }
     }
     &--title {

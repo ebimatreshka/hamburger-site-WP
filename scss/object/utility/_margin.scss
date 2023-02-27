@@ -2,13 +2,13 @@
 @use "./../../foundation/mixin" as m;
 
 .u-margin__title--menu {
-    display: none;
+    display          : none;
     @include m.pc {
-        display: block;
-        margin-top: m.pc-vw( 82 );
+        display      : block;
+        margin-top   : m.pc-vw( 82 );
         margin-bottom: m.pc-vw( 85 );
-        text-align: start;
-        padding-left: m.pc-vw( 46 );
+        text-align   : start;
+        padding-left : m.pc-vw( 46 );
     }
 }
 
@@ -56,19 +56,15 @@
         }
     }
 }
-//singleのp
-// .u-margin__L50 {
-//     margin-left: m.pc-vw( 50 );
-// }
 //真ん中中央寄せ
 .u-margin__0 {
     margin: 0 auto;
 }
 //single-page下に
 .u-margin__B30 {
-    margin-bottom: m.sp-vw( 30 );
+    margin-bottom        : m.sp-vw( 30 );
     @include m.tablet {
-        margin-bottom: m.tb-vw( 61 );
+        margin-bottom    : m.tb-vw( 61 );
         @include m.pc {
             margin-bottom: m.pc-vw( 60 );
         }
@@ -78,23 +74,23 @@
 //single-page listの間
 // .u-margin__B20 {
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > ul > li > ul,ol {
-    margin-top: m.sp-vw( 20 );
-    margin-bottom: m.sp-vw( 20 );
+    margin-top           : m.sp-vw( 20 );
+    margin-bottom        : m.sp-vw( 20 );
     @include m.tablet {
-        margin-top: m.tb-vw( 20 );        
-        margin-bottom: m.tb-vw( 20 );
-        margin-left: 2vw;
+        margin-top       : m.tb-vw( 20 );        
+        margin-bottom    : m.tb-vw( 20 );
+        margin-left      : 2vw;
         @include m.pc {
-            margin-top: m.pc-vw( 20 );
+            margin-top   : m.pc-vw( 20 );
             margin-bottom: m.pc-vw( 20 );
         }
     }
 }
 
 .u-margin__L34 {
-    margin-left: m.sp-vw( 18 );
+    margin-left        : m.sp-vw( 18 );
     @include m.tablet {
-        margin-left: m.tb-vw( 18 );
+        margin-left    : m.tb-vw( 18 );
         @include m.pc {
             margin-left: m.pc-vw( 18 );
         }
@@ -102,17 +98,17 @@
 }
 //single-page 一番下の<p>
 .u-margin__L20 {
-    margin-top: m.sp-vw( 30 );
-    margin-bottom: m.sp-vw( 177 );
-    margin-left: m.sp-vw( 20 );
+    margin-top           : m.sp-vw( 30 );
+    margin-bottom        : m.sp-vw( 177 );
+    margin-left          : m.sp-vw( 20 );
     @include m.tablet {
-        margin-top: m.tb-vw( 60 );
-        margin-bottom: m.tb-vw( 228 );
-        margin-left: m.tb-vw( 60 );
+        margin-top       : m.tb-vw( 60 );
+        margin-bottom    : m.tb-vw( 228 );
+        margin-left      : m.tb-vw( 60 );
         @include m.pc {
-            margin-top: m.pc-vw( 60 );
+            margin-top   : m.pc-vw( 60 );
             margin-bottom: m.pc-vw( 353 );
-            margin-left: m.pc-vw( 100 );
+            margin-left  : m.pc-vw( 100 );
         }
     }
 }

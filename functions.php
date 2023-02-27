@@ -30,14 +30,6 @@ function custom_theme_support()
         );
     }
     add_action('init', 'register_my_menus');
-
-
-
-    // add_theme_support('menus'); //menusとsをつけると複数登録できる
-    // register_nav_menus(array(
-    //     "footer-menu" => "フッター",
-    //     "sidebar-menu" => "サイドメニュー",
-    // ));
 }
 //実行
 add_action("after_setup_theme", "custom_theme_support");

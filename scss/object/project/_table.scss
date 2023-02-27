@@ -6,35 +6,33 @@
 //single-page table
 // .p-table {
 .wp-block-table {
-    border-collapse: collapse; //tableの線を一重に
-    background-color: v.$color-white;
-    width: m.sp-vw( 335 );
-    margin-top: m.sp-vw( 30 );
-    // margin-left: m.sp-vw( 20 );
-    margin-left: auto;
-    margin-right: auto;
+    border-collapse      : collapse; //tableの線を一重に
+    background-color     : v.$color-white;
+    width                : m.sp-vw( 335 );
+    margin-top           : m.sp-vw( 30 );
+    margin-left          : auto;
+    margin-right         : auto;
     @include m.tablet {
-        width: m.tb-vw( 714 );
-        margin-top: m.tb-vw( 60 );
+        width            : m.tb-vw( 714 );
+        margin-top       : m.tb-vw( 60 );
     @include m.pc {
-            width: m.pc-vw( 1358 );
-            margin-top: m.pc-vw( 50 );
+            width        : m.pc-vw( 1358 );
+            margin-top   : m.pc-vw( 50 );
             margin-bottom: m.pc-vw( 60 );
-            // margin-left: m.pc-vw( 100 );
         }
     }
     &__td {
-        padding-top: m.sp-vw( 28 );
-        padding-bottom: m.sp-vw( 27 );
-        padding-left: m.sp-vw( 30 );
+        padding-top           : m.sp-vw( 28 );
+        padding-bottom        : m.sp-vw( 27 );
+        padding-left          : m.sp-vw( 30 );
         @include m.tablet {
-            padding-top: m.tb-vw( 28 );
-            padding-bottom: m.tb-vw( 27 );
-            padding-left: m.tb-vw( 30 );
+            padding-top       : m.tb-vw( 28 );
+            padding-bottom    : m.tb-vw( 27 );
+            padding-left      : m.tb-vw( 30 );
         @include m.pc {
-                padding-top: m.pc-vw( 28 );
+                padding-top   : m.pc-vw( 28 );
                 padding-bottom: m.pc-vw( 27 );
-                padding-left: m.pc-vw( 30 );
+                padding-left  : m.pc-vw( 30 );
             }
         }
     }

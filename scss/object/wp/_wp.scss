@@ -4,33 +4,33 @@
 @use "./../../foundation/mixin" as m;
 
 //front-page
-    //brunch-menuのtitle下の擬似要素
+//brunch-menuのtitle下の擬似要素
 h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
-    position: absolute;
-    content: '';
-    display: inline-block;
+    position        : absolute;
+    content         : '';
+    display         : inline-block;
     background-color: v.$color-white;
-    width     : 9.03vw;
-    height    : 6.5px;
-    height    : 1.2vw;
-    top       : 19vw;
-    left      : 4vw;
+    width           : 9.03vw;
+    height          : 6.5px;
+    height          : 1.2vw;
+    top             : 19vw;
+    left            : 4vw;
     @include m.tablet {
-        width : m.tb-vw( 35.99 );
-        height: m.tb-vw( 3.5 );
-        top   : 11.913vw;
-        left  : 1.4vw;
-        left  : m.tb-vw( 15.1 );
+        width       : m.tb-vw( 35.99 );
+        height      : m.tb-vw( 3.5 );
+        top         : 11.913vw;
+        left        : 1.4vw;
+        left        : m.tb-vw( 15.1 );
     }
     @include m.pc {
-        width : m.pc-vw( 63 );
-        height: 0.25vw;
-        top   : 8vw;
+        width       : m.pc-vw( 63 );
+        height      : 0.25vw;
+        top         : 8vw;
     }
 }
 
 //sidebar
-    //メニュー名を右へ
+//メニュー名を右へ
 ul.sub-menu {
     padding-left    : m.sp-vw( 66 );
     @include m.tablet {
@@ -42,18 +42,19 @@ ul.sub-menu {
 }
 
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-14 {
-    margin-top: m.sp-vw( 212 );
+    margin-top    : m.sp-vw( 212 );
     @include m.tablet {
         margin-top: m.tb-vw( 212 );
     }
     @include m.pc {
-        margin: 0;
+        margin    : 0;
     }
 }
-    //文字間隔.p-nav__li
+
+//文字間隔.p-nav__li
 .menu-item.menu-item-type-post_type.menu-item-object-post {
-    font-family: "M PLUS 1p", sans-serif;
-    font-weight: 400;
+    font-family       : "M PLUS 1p", sans-serif;
+    font-weight       : 400;
     padding-bottom    : m.sp-vw( 23 );
     @include m.tablet {
         padding-bottom: m.tb-vw( 23 );
@@ -63,28 +64,29 @@ ul.sub-menu {
     }
 }
 
-    //バーガー、サイド、ドリンクのmargin
+//バーガー、サイド、ドリンクのmargin
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children > a {
-    display: inline-block;
-    padding-left      : m.sp-vw( 46 );
+    display          : inline-block;
+    padding-left     : m.sp-vw( 46 );
     margin-bottom    : m.sp-vw( 25 );
-    font-size: m.sp-vw( 24 );
-    font-family: "M PLUS 1p", sans-serif;
-    font-weight: 700;
+    font-size        : m.sp-vw( 24 );
+    font-family      : "M PLUS 1p", sans-serif;
+    font-weight      : 700;
     @include m.tablet {
-        padding-left  : m.tb-vw( 46 );
+        padding-left : m.tb-vw( 46 );
         margin-bottom: m.tb-vw( 40 );
-        font-size     : m.tb-vw( 24 );
+        font-size    : m.tb-vw( 24 );
     }
     @include m.pc {
-        display: inline-block;
-        text-align    : left;
-        padding-left  : m.pc-vw( 46 );
+        display      : inline-block;
+        text-align   : left;
+        padding-left : m.pc-vw( 46 );
         margin-bottom: m.pc-vw( 40 );
-        font-size     : m.pc-vw( 24 );
+        font-size    : m.pc-vw( 24 );
     }
 }
-    //サイドのマージン
+
+//サイドのマージン
 .menu-item.menu-item-type-taxonomy.menu-item-object-category.menu-item-has-children.menu-item-16 > a {
     margin-top        : m.sp-vw( 11 );
 }
@@ -96,40 +98,43 @@ ul.sub-menu {
 //footer
 //ショップ情報とヒストリーを横並び
 div[class="menu"] > ul {
-    display: flex;
+    display  : flex;
     //文字色白
     > li a {
         color: v.$color-white;
     }
 }
+
 //ショップ情報とヒストリーの間に縦線
 .page_item.page-item-19 {
     border-right: 1px solid v.$color-white;
-    padding: 2px 8px;
+    padding     : 2px 8px;
 }
 .page_item.page-item-79 {
     padding: 2px 8px;
 }
 
+
 //ページネーション
 //全体を囲む
 .wp-pagination__wapper {
-    display: block;
+    display : block;
     position: relative;
 }
-    //横並び
+
+//横並び
 .wp-pagenavi {
-    display: flex;
-    justify-content: space-between;
+    display            : flex;
+    justify-content    : space-between;
     @include m.tablet {
         justify-content: center;
-        align-items: center;
+        align-items    : center;
     }
 }
 
 .p-pagination > .p-pagination__item {
     @include m.tablet {
-        margin-right: m.tb-vw( 19.3 );
+        margin-right    : m.tb-vw( 19.3 );
         @include m.pc {
             margin-right: m.pc-vw( 19.3 );
         }
@@ -138,32 +143,33 @@ div[class="menu"] > ul {
 
 .p-pagination > .wp-pagenavi > .page.larger:hover {
     background-color: v.$color-dark-brown;
-    color: v.$color-white;
-}
-.p-pagination > .wp-pagenavi > .page.smaller:hover {
-    background-color: v.$color-dark-brown;
-    color: v.$color-white;
+    color           : v.$color-white;
 }
 
+.p-pagination > .wp-pagenavi > .page.smaller:hover {
+    background-color: v.$color-dark-brown;
+    color           : v.$color-white;
+}
 
 //箱の間隔調整(classがlargerとsmallerの2つあり)
 .page.larger, .page.smaller, .current {
-    display: none;
+    display       : none;
     @include m.tablet {
-        display: block;
-        width: m.tb-vw( 35 );
-        height: m.tb-vw( 35 );
+        display   : block;
+        width     : m.tb-vw( 35 );
+        height    : m.tb-vw( 35 );
         text-align: center;
-        border: solid 1px v.$color-brown;
+        border    : solid 1px v.$color-brown;
     }
 }
+
 //箱の調整
 .page.larger, .page.smaller, span.current {
     @include m.tablet {
-        border: solid 1px v.$color-brown;
-        color : v.$color-brown;
-        font-family: "Roboto", sans-serif;
-        font-weight: bold;
+        border      : solid 1px v.$color-brown;
+        color       : v.$color-brown;
+        font-family : "Roboto", sans-serif;
+        font-weight : bold;
         width       : m.tb-vw( 35 );
         height      : m.tb-vw( 35 );
         margin-right: m.tb-vw( 15 );
@@ -178,10 +184,11 @@ div[class="menu"] > ul {
         line-height : 1.5;
     }
 }
+
  //<<と>>の箱の囲みを解除
 .wp-pagination__wapper > .p-pagination > .wp-pagenavi > .previouspostslink {
-    border: none;
-    margin-right: m.tb-vw( 15 );
+    border          : none;
+    margin-right    : m.tb-vw( 15 );
     @include m.pc {
         margin-right: m.pc-vw( 15 );
     }
@@ -194,21 +201,22 @@ div[class="menu"] > ul {
 //spで前へ表示
 .previouspostslink {
     &::before {
-    content: "前へ";
+    content         : "前へ";
     display         : block;
     position        : absolute;
     height          : m.sp-vw( 22 );
     background-color: v.$color-bg-egg;
     left            : m.sp-vw( 46 );
     @include m.tablet {
-        display: none; //前へを非表示に
+        display     : none; //前へを非表示に
         }
     } 
 }
-    //spで次へ表示
+
+//spで次へ表示
 .nextpostslink {
     &::after {
-        content: "次へ";
+        content         : "次へ";
         display         : block;
         position        : absolute;
         height          : m.sp-vw( 22 );
@@ -216,14 +224,15 @@ div[class="menu"] > ul {
         right           : m.sp-vw( 45 );
         top             : 1vw;
         @include m.tablet {
-            display: none; //次へを非表示に
+            display     : none; //次へを非表示に
         }
     }
 }
 
+
 //search.php
 .wp-search {
-    margin-top: m.sp-vw( 30 );
+    margin-top         : m.sp-vw( 30 );
     margin-left        : m.sp-vw( 37 );
     @include m.tablet {
         margin-left    : m.tb-vw( 86 );
@@ -233,13 +242,13 @@ div[class="menu"] > ul {
     }
 }
 
+
 //archive
-    //
 .p-section__card__image {
-    width: m.sp-vw( 336.11 );
-    margin: 0 0; //画像とテキストの間のmarginをとる
+    width        : m.sp-vw( 336.11 );
+    margin       : 0 0; //画像とテキストの間のmarginをとる
     @include m.tablet {
-        width: m.tb-vw( 378.28 );
+        width    : m.tb-vw( 378.28 );
         @include m.pc {
             width: m.pc-vw( 677 );
         }
@@ -248,7 +257,7 @@ div[class="menu"] > ul {
         width: 100%;
     }
 }    
-    //
+
 .p-section__archiveAbout--article {
     h2 {
         margin-top          : m.sp-vw( 30 );
@@ -266,14 +275,14 @@ div[class="menu"] > ul {
         }
     }
     p {
-        min-height: m.sp-vw( 114 );
+        min-height       : m.sp-vw( 114 );
         margin-top       : m.sp-vw( 30 );
         margin-right     : m.sp-vw( 18 );
         margin-bottom    : m.sp-vw( 19 );
         margin-left      : m.sp-vw( 22 );
         line-height      : 1.4375;
         @include m.tablet {
-            min-height: m.tb-vw( 114 );
+            min-height   : m.tb-vw( 114 );
             font-size    : m.tb-vw( 16 );
             margin-top   : m.tb-vw( 25 );
             margin-right : m.tb-vw( 35 );
@@ -281,7 +290,7 @@ div[class="menu"] > ul {
             margin-left  : m.tb-vw( 42 );
         }
         @include m.pc {
-            min-height: m.pc-vw( 73 );
+            min-height   : m.pc-vw( 73 );
             font-size    : m.pc-vw( 16 );
             // margin-top: m.tb-vw( 25 );
             margin-right : m.pc-vw( 100 );
@@ -291,37 +300,21 @@ div[class="menu"] > ul {
     }
 }
 
-    //card 小見出し
-// .p-section__card__about--wrapper h2:nth-child(2n) {
-//     color: v.$color-white;
-//     padding-top        : m.sp-vw( 24 );
-//     margin-left        : m.sp-vw( 17 );
-//     @include m.tablet {
-//         padding-top    : m.tb-vw( 24 );
-//         margin-left    : m.tb-vw( 34.7 );
-//         @include m.pc {
-//             font-size  : m.pc-vw( 24 );
-//             line-height: 1.5;
-//             padding-top: m.pc-vw( 47 );
-//             margin-left: m.pc-vw( 63 );
-//         }
-//     }
-// }
-    //card　文章
+//card　文章
 .p-section__card__about--wrapper p {
-    height: m.sp-vw( 130 );
-    color: v.$color-white;
+    height              : m.sp-vw( 130 );
+    color               : v.$color-white;
     padding-top         : m.sp-vw( 24 );
     margin-right        : m.sp-vw( 73.1 );
     margin-left         : m.sp-vw( 17 );
     line-height         : 1.4375;
     @include m.tablet {
-        height: m.tb-vw( 220 );
+        height          : m.tb-vw( 220 );
         padding-top     : m.tb-vw( 24 );
         margin-right    : m.tb-vw( 59 );
         margin-left     : m.tb-vw( 34.7 );
         @include m.pc {
-            height: m.pc-vw( 170 );
+            height      : m.pc-vw( 170 );
             font-size   : m.pc-vw( 16 );
             padding-top : m.pc-vw( 47 );
             margin-right: m.pc-vw( 104 );
@@ -330,21 +323,23 @@ div[class="menu"] > ul {
     }
 }
 
+
 //single.php
-    //h2
+//h2
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h2 {
-    margin-top: m.sp-vw( 30 );
-    margin-left: m.sp-vw( 20 );
+    margin-top         : m.sp-vw( 30 );
+    margin-left        : m.sp-vw( 20 );
     @include m.tablet {
-        margin-top: m.tb-vw( 60 );
-        margin-left: m.tb-vw( 60 );
+        margin-top     : m.tb-vw( 60 );
+        margin-left    : m.tb-vw( 60 );
         @include m.pc {
-            margin-top: m.pc-vw( 60 );
+            margin-top : m.pc-vw( 60 );
             margin-left: m.pc-vw( 100 );
         }
     }
 }
-    //h2の下
+
+//h2の下
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > p {
     margin-top          : m.sp-vw( 30 );
     margin-right        : m.sp-vw( 20 );
@@ -360,7 +355,8 @@ div[class="menu"] > ul {
         }
     }
 }
-    //h3
+
+//h3
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h3 {
     margin-top         : m.sp-vw( 34 );
     margin-left        : m.sp-vw( 20 );
@@ -373,7 +369,8 @@ div[class="menu"] > ul {
         }
     }
 }
-    //h4
+
+//h4
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h4 {
     margin-top         : m.sp-vw( 31 );
     margin-left        : m.sp-vw( 20 );
@@ -386,23 +383,22 @@ div[class="menu"] > ul {
         }
     }
 }
-    //囲まれたテキスト
+
+//囲まれたテキスト
 .wp-block-quote {
     display              : block;
-    width: 89%;
+    width                : 89%;
     margin               : 0 auto;
-    background-color: v.$color-bg-light-gray;   //single-page
+    background-color     : v.$color-bg-light-gray;   //single-page
     margin-top           : m.sp-vw( 30 );
     margin-right         : auto;
     margin-bottom        : m.sp-vw( 30 );
     margin-left          : auto;
     @include m.tablet {
-        max-height: m.tb-vw( 444 );
-        width: 85.6%;
+        max-height       : m.tb-vw( 444 );
+        width            : 85.6%;
         margin-top       : m.tb-vw( 60 );
-        // margin-right     : m.tb-vw( 60 );
         margin-bottom    : m.tb-vw( 60 );
-        // margin-left      : m.tb-vw( 60 );
         @include m.pc {
             margin-top   : m.pc-vw( 60 );
             margin-bottom: m.pc-vw( 60);
@@ -461,6 +457,7 @@ div[class="menu"] > ul {
         }
     }
 }
+
 //ハンバーガーの一番大きい写真の位置
 img.wp-image-109 {
     width            : 89%;
@@ -478,6 +475,7 @@ img.wp-image-109 {
         }
     }
 }
+
 //画像と文章横並び
 .l-main__single > .is-stacked-on-mobile.wp-block-media-text {
     display                 : flex;
@@ -507,6 +505,7 @@ img.wp-image-109 {
         }
     }
 }
+
 //3個目の画像の配置
 .l-main__single > .wp-block-media-text.has-media-on-the-right.is-stacked-on-mobile.is-vertically-aligned-top.margin{
     display      : flex;
@@ -536,6 +535,7 @@ img.wp-image-109 {
         }
     }
 }
+
 //2,3個目の画像をfigureの幅に合わせる
 .wp-block-media-text__media > .wp-image-109.size-full {
         width: 100%;
@@ -548,10 +548,12 @@ img.wp-image-109 {
         height: m.pc-vw( 257 );
     }
 }
+
 //9つの画像サイズ
 .wp-block-gallery.has-nested-images.columns-default figure.wp-block-image:not(#individual-image) {
     width: 100%;
 }
+
 //9つの画像のgrid設定
 .is-layout-flex.wp-block-gallery-1.wp-block-gallery.has-nested-images.columns-default.is-cropped {
     display                  : grid;
@@ -576,20 +578,21 @@ img.wp-image-109 {
         }
     }
 }
+
 //表の枠の幅
 .wp-block-table > table > tbody > tr > td {
-    line-height: 1.4375;
-    padding-top: m.sp-vw( 28 );
-    padding-bottom: m.sp-vw( 27 );
-    padding-left: m.sp-vw( 30 );
+    line-height           : 1.4375;
+    padding-top           : m.sp-vw( 28 );
+    padding-bottom        : m.sp-vw( 27 );
+    padding-left          : m.sp-vw( 30 );
     @include m.tablet {
-        padding-top: m.tb-vw( 28 );
-        padding-bottom: m.tb-vw( 27 );
-        padding-left: m.tb-vw( 30 );
+        padding-top       : m.tb-vw( 28 );
+        padding-bottom    : m.tb-vw( 27 );
+        padding-left      : m.tb-vw( 30 );
     @include m.pc {
-            padding-top: m.pc-vw( 28 );
+            padding-top   : m.pc-vw( 28 );
             padding-bottom: m.pc-vw( 27 );
-            padding-left: m.pc-vw( 30 );
+            padding-left  : m.pc-vw( 30 );
         }
     }
 }

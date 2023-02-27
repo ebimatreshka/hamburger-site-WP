@@ -20,28 +20,25 @@
     }
     //paginationの《
     &__《::before {
-        // content         : "《";
-        content: "前へ";
+        content         : "前へ";
         display         : block;
         position        : absolute;
         height          : m.sp-vw( 22 );
         background-color: v.$color-bg-egg;
         left            : m.sp-vw( 46 );
         @include m.tablet {
-            display: none; //前へを非表示に
+            display     : none; //前へを非表示に
         }
     }
     //paginationの》
     &__》::after {
-        // content         : "》";
-        content: "次へ";
-        // display         : block;
+        content         : "次へ";
         position        : absolute;
         height          : m.sp-vw( 22 );
         background-color: v.$color-bg-egg;
         right           : m.sp-vw( 45 );
         @include m.tablet {
-            display: none; //次へを非表示に
+            display     : none; //次へを非表示に
         }
     }
 }

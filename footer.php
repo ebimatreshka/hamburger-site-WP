@@ -9,8 +9,6 @@
                     )
                 );
                 ?>
-                <!-- <li class="p-footer__menu__li c-font__M--regular c-font-size__20">ショップ情報　|</li>
-                <li class="p-footer__menu__li c-font__M--regular c-font-size__20">　ヒストリー</li> -->
             </ul>
             <small class="p-footer__copyright c-font__M--regular c-font-size__14">Copyright: RaiseTech</small>
         </footer>
