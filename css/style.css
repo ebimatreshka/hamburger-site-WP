@@ -2402,20 +2402,27 @@ div[class=menu] > ul > li a {
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > p {
   margin-top: 8vw;
   margin-right: 5.3333333333vw;
+  margin-bottom: 49.0666666667vw;
   margin-left: 5.3333333333vw;
+  font-weight: bold;
+  font-size: 4.2666666667vw;
 }
 @media screen and (min-width: 600px) {
   .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > p {
     margin-top: 7.1942446043vw;
     margin-right: 7.1942446043vw;
+    margin-bottom: 27.3381294964vw;
     margin-left: 7.1942446043vw;
+    font-size: 1.9184652278vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
   .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > p {
     margin-top: 3.125vw;
     margin-right: 5.2083333333vw;
+    margin-bottom: 18.3854166667vw;
     margin-left: 5.2083333333vw;
+    font-size: 0.8333333333vw;
   }
 }
 

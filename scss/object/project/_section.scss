@@ -219,55 +219,54 @@
 // .p-section__single--button {
 
 .is-layout-flex.wp-block-buttons > .wp-block-button {    
-    width                   : m.sp-vw( 335 );
-    height                  : m.sp-vw( 81 );
-    margin-top              : m.sp-vw( 30 );
-    margin-left             : m.sp-vw( 20 );
-    line-height             : m.sp-vw( 58 );
-    border-radius: m.sp-vw( 20 ); //single-pageのボタン
-    border: v.$color-brown 1px solid;
-    color: v.$color-dark-brown;
-    background-color: v.$color-bg-light-gray;
-    background      : linear-gradient(#F2EDE9, #DED8D3);
+    width                : m.sp-vw( 335 );
+    height               : m.sp-vw( 81 );
+    margin-top           : m.sp-vw( 30 );
+    margin-left          : m.sp-vw( 20 );
+    line-height          : m.sp-vw( 58 );
+    border-radius        : m.sp-vw( 20 ); //single-pageのボタン
+    border               : v.$color-brown 1px solid;
+    color                : v.$color-dark-brown;
+    background-color     : v.$color-bg-light-gray;
+    background           : linear-gradient(#F2EDE9, #DED8D3);
         @include m.tablet {
-        width               : m.tb-vw( 429 );
-        height              : m.tb-vw( 104 );
-        margin-top          : m.tb-vw( 60 );
-        margin-left         : m.tb-vw( 60 );
-        line-height         : m.tb-vw( 100 );
-        border-radius: m.tb-vw( 20 ); //single-pageのボタン
+        width            : m.tb-vw( 429 );
+        height           : m.tb-vw( 104 );
+        margin-top       : m.tb-vw( 60 );
+        margin-left      : m.tb-vw( 60 );
+        line-height      : m.tb-vw( 100 );
+        border-radius    : m.tb-vw( 20 ); //single-pageのボタン
         @include m.pc {
-            width           : m.pc-vw( 429 );
-            height          : m.pc-vw( 104 );
-            margin-top      : m.pc-vw( 60 );
-            margin-left     : m.pc-vw( 100 );
+            width        : m.pc-vw( 429 );
+            height       : m.pc-vw( 104 );
+            margin-top   : m.pc-vw( 60 );
+            margin-left  : m.pc-vw( 100 );
             border-radius: m.pc-vw( 20 ); //single-pageのボタン
-            line-height     : m.pc-vw( 100 );;
+            line-height  : m.pc-vw( 100 );;
         }
     }
 }
 // &-a {
     .is-layout-flex.wp-block-buttons > .wp-block-button > .wp-block-button__link.wp-element-button{    
-        width             : m.sp-vw( 335 );
-        height            : m.sp-vw( 81 );
-        // margin-top        : -21.6vw;
-        display           : blo;
-        color: v.$color-dark-brown;
+        width           : m.sp-vw( 335 );
+        height          : m.sp-vw( 81 );
+        // margin-top   : -21.6vw;
+        display         : blo;
+        color           : v.$color-dark-brown;
         background-color: transparent;
-        font-family: "M PLUS 1p", sans-serif;
-        font-weight: 700;
-        font-size: m.sp-vw( 16 );
+        font-family     : "M PLUS 1p", sans-serif;
+        font-weight     : 700;
+        font-size       : m.sp-vw( 16 );
         @include m.tablet {
-            width         : m.tb-vw( 429 );
-            height        : m.tb-vw( 104 );
-        margin-top    : -12.6vw;
-        font-size: m.tb-vw( 16 );
-        // display    : block;
+            width       : m.tb-vw( 429 );
+            height      : m.tb-vw( 104 );
+        margin-top      : -12.6vw;
+        font-size       : m.tb-vw( 16 );
     @include m.pc {
-            width     : m.pc-vw( 429 );
-            height    : m.pc-vw( 104 );
-            margin-top: -5.5vw;
-            font-size: m.pc-vw( 16 );
+            width       : m.pc-vw( 429 );
+            height      : m.pc-vw( 104 );
+            margin-top  : -5.5vw;
+            font-size   : m.pc-vw( 16 );
         }
     }
 }

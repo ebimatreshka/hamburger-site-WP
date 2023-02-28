@@ -355,17 +355,25 @@ div[class="menu"] > ul {
 
 //h2の下
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > p {
-    margin-top          : m.sp-vw( 30 );
-    margin-right        : m.sp-vw( 20 );
-    margin-left         : m.sp-vw( 20 );
-@include m.tablet {
-        margin-top      : m.tb-vw( 60 );
-        margin-right    : m.tb-vw( 60 );
-        margin-left     : m.tb-vw( 60 );
+    margin-top           : m.sp-vw( 30 );
+    margin-right         : m.sp-vw( 20 );
+    margin-bottom        : m.sp-vw( 184 );
+    margin-left          : m.sp-vw( 20 );
+    font-weight          : bold;
+    font-size            : m.sp-vw( 16 );
+    @include m.tablet {
+        margin-top       : m.tb-vw( 60 );
+        margin-right     : m.tb-vw( 60 );
+        margin-bottom    : m.tb-vw( 228 );
+
+        margin-left      : m.tb-vw( 60 );
+        font-size        : m.tb-vw( 16 );
         @include m.pc {
-            margin-top  : m.pc-vw( 60 );
-            margin-right: m.pc-vw( 100 );
-            margin-left : m.pc-vw( 100 );
+            margin-top   : m.pc-vw( 60 );
+            margin-right : m.pc-vw( 100 );
+            margin-bottom: m.pc-vw( 353 );
+            margin-left  : m.pc-vw( 100 );   
+             font-size   : m.pc-vw( 16 );
         }
     }
 }
