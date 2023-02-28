@@ -1810,6 +1810,7 @@ img {
   }
 }
 .p-section__card__button {
+  margin-top: 10.6666666667vw;
   margin-right: 24.8vw;
   margin-bottom: 11.6533333333vw;
   margin-left: 21.3066666667vw;
@@ -1820,6 +1821,7 @@ img {
 }
 @media screen and (min-width: 600px) {
   .p-section__card__button {
+    margin-top: 4vw;
     margin-right: 11.9664268585vw;
     margin-bottom: 4.0167865707vw;
     margin-left: 13.7529976019vw;
@@ -1835,6 +1837,26 @@ img {
     margin-right: 9.3229166667vw;
     margin-bottom: 3.125vw;
     margin-left: 10.6770833333vw;
+  }
+}
+
+.p-section__card__title.c-font__M--bold.c-font-size__20.c-color__white + h2 {
+  color: #FFFFFF;
+  padding-left: 4.5333333333vw;
+  margin-top: 6.4vw;
+}
+@media screen and (min-width: 600px) {
+  .p-section__card__title.c-font__M--bold.c-font-size__20.c-color__white + h2 {
+    padding-left: 4.1606714628vw;
+    margin-top: 2.8776978417vw;
+    font-size: 2.3980815348vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .p-section__card__title.c-font__M--bold.c-font-size__20.c-color__white + h2 {
+    padding-left: 3.28125vw;
+    margin-top: 1.25vw;
+    font-size: 1.5625vw;
   }
 }
 
@@ -2021,6 +2043,10 @@ img {
     padding-bottom: 1.40625vw;
     padding-left: 1.5625vw;
   }
+}
+
+h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element > a {
+  color: #FFFFFF;
 }
 
 h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
@@ -2340,7 +2366,7 @@ div[class=menu] > ul > li a {
 }
 
 .p-section__card__about--wrapper p {
-  height: 34.6666666667vw;
+  max-height: 34.6666666667vw;
   color: #FFFFFF;
   padding-top: 6.4vw;
   margin-right: 19.4933333333vw;
@@ -2349,7 +2375,7 @@ div[class=menu] > ul > li a {
 }
 @media screen and (min-width: 600px) {
   .p-section__card__about--wrapper p {
-    height: 26.3788968825vw;
+    max-height: 20.3836930456vw;
     padding-top: 2.8776978417vw;
     margin-right: 7.0743405276vw;
     margin-left: 4.1606714628vw;
@@ -2357,7 +2383,7 @@ div[class=menu] > ul > li a {
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
   .p-section__card__about--wrapper p {
-    height: 8.8541666667vw;
+    max-height: 6.25vw;
     font-size: 0.8333333333vw;
     padding-top: 2.4479166667vw;
     margin-right: 5.4166666667vw;

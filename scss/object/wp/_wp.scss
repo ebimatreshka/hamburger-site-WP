@@ -4,6 +4,11 @@
 @use "./../../foundation/mixin" as m;
 
 //front-page
+//Take Outの文字色を白に
+h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element > a {
+    color: v.$color-white;
+}
+
 //brunch-menuのtitle下の擬似要素
 h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
     position        : absolute;
@@ -302,19 +307,19 @@ div[class="menu"] > ul {
 
 //card　文章
 .p-section__card__about--wrapper p {
-    height              : m.sp-vw( 130 );
+    max-height              : m.sp-vw( 130 );
     color               : v.$color-white;
     padding-top         : m.sp-vw( 24 );
     margin-right        : m.sp-vw( 73.1 );
     margin-left         : m.sp-vw( 17 );
     line-height         : 1.4375;
     @include m.tablet {
-        height          : m.tb-vw( 220 );
+        max-height          : m.tb-vw( 170 );
         padding-top     : m.tb-vw( 24 );
         margin-right    : m.tb-vw( 59 );
         margin-left     : m.tb-vw( 34.7 );
         @include m.pc {
-            height      : m.pc-vw( 170 );
+            max-height      : m.pc-vw( 120 );
             font-size   : m.pc-vw( 16 );
             padding-top : m.pc-vw( 47 );
             margin-right: m.pc-vw( 104 );
@@ -618,3 +623,4 @@ img.wp-image-109 {
         }
     }
 }
+

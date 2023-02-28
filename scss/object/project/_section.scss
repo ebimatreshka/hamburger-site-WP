@@ -123,6 +123,7 @@
         }
     }
     &__button {
+        margin-top: m.sp-vw( 40 );
         margin-right             : m.sp-vw( 93 );
         margin-bottom            : m.sp-vw( 43.7 );
         margin-left              : m.sp-vw( 79.9 );
@@ -131,6 +132,7 @@
         padding-bottom           : m.sp-vw( 10.5 );
         padding-left             : m.sp-vw( 41.1);
         @include m.tablet {
+            margin-top: m.sp-vw( 15 );
             margin-right         : m.tb-vw( 99.8 );
             margin-bottom        : m.tb-vw( 33.5 );
             margin-left          : m.tb-vw( 114.7 );
@@ -143,6 +145,28 @@
                 margin-right     : m.pc-vw( 179 );
                 margin-bottom    : m.pc-vw( 60 );
                 margin-left      : m.pc-vw( 205 );
+            }
+        }
+    }
+}
+
+//category
+// .p-section__card__about--wrapper.c-bg-color--dark-brown:nth-child(2) {
+//     color: v.$color-white;
+// }
+.p-section__card__title.c-font__M--bold.c-font-size__20.c-color__white {
+    +h2 {
+        color: v.$color-white;
+        padding-left: m.sp-vw( 17 );
+        margin-top: m.sp-vw( 24 );
+        @include m.tablet {
+            padding-left: m.tb-vw( 34.7 );
+            margin-top: m.tb-vw( 24 );    
+            font-size: m.tb-vw( 20 );
+            @include m.pc {
+                padding-left: m.pc-vw( 63 );
+                margin-top: m.pc-vw( 24 );
+                font-size: m.pc-vw( 30 );
             }
         }
     }
