@@ -323,6 +323,20 @@ div[class="menu"] > ul {
     }
 }
 
+//ページネーション
+//
+.wp-pagenavi .pages {
+    display: none;
+    @include m.tablet {
+        display: block;
+        border: none;
+        font-family: 'Roboto', sans-serif;
+        font-size: m.tb-vw( 16 );
+        @include m.pc {
+            font-size: m.pc-vw( 16 );
+        }
+    }
+}
 
 //single.php
 //h2

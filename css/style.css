@@ -2351,6 +2351,23 @@ div[class=menu] > ul > li a {
   }
 }
 
+.wp-pagenavi .pages {
+  display: none;
+}
+@media screen and (min-width: 600px) {
+  .wp-pagenavi .pages {
+    display: block;
+    border: none;
+    font-family: "Roboto", sans-serif;
+    font-size: 1.9184652278vw;
+  }
+}
+@media screen and (min-width: 600px) and (min-width: 1025px) {
+  .wp-pagenavi .pages {
+    font-size: 0.8333333333vw;
+  }
+}
+
 .l-main__single.p-main__single.c-grid__main.c-bg-color--egg > h2 {
   margin-top: 8vw;
   margin-left: 5.3333333333vw;
