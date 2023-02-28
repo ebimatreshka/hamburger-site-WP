@@ -1922,49 +1922,63 @@ img {
   }
 }
 
-.p-section__single--button {
+.is-layout-flex.wp-block-buttons > .wp-block-button {
   width: 89.3333333333vw;
   height: 21.6vw;
   margin-top: 8vw;
   margin-left: 5.3333333333vw;
-  line-height: 21.6vw;
+  line-height: 15.4666666667vw;
+  border-radius: 5.3333333333vw;
+  border: #707070 1px solid;
+  color: #3C2A10;
+  background-color: #F5F5F5;
+  background: linear-gradient(#F2EDE9, #DED8D3);
 }
 @media screen and (min-width: 600px) {
-  .p-section__single--button {
+  .is-layout-flex.wp-block-buttons > .wp-block-button {
     width: 51.4388489209vw;
     height: 12.4700239808vw;
     margin-top: 7.1942446043vw;
     margin-left: 7.1942446043vw;
-    line-height: 12.47vw;
+    line-height: 11.9904076739vw;
+    border-radius: 2.3980815348vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
-  .p-section__single--button {
+  .is-layout-flex.wp-block-buttons > .wp-block-button {
     width: 22.34375vw;
     height: 5.4166666667vw;
     margin-top: 3.125vw;
     margin-left: 5.2083333333vw;
-    line-height: 5.416vw;
+    border-radius: 1.0416666667vw;
+    line-height: 5.2083333333vw;
   }
 }
-.p-section__single--button-a {
+
+.is-layout-flex.wp-block-buttons > .wp-block-button > .wp-block-button__link.wp-element-button {
   width: 89.3333333333vw;
   height: 21.6vw;
-  margin-top: -21.6vw;
-  display: block;
+  display: blo;
+  color: #3C2A10;
+  background-color: transparent;
+  font-family: "M PLUS 1p", sans-serif;
+  font-weight: 700;
+  font-size: 4.2666666667vw;
 }
 @media screen and (min-width: 600px) {
-  .p-section__single--button-a {
+  .is-layout-flex.wp-block-buttons > .wp-block-button > .wp-block-button__link.wp-element-button {
     width: 51.4388489209vw;
     height: 12.4700239808vw;
     margin-top: -12.6vw;
+    font-size: 1.9184652278vw;
   }
 }
 @media screen and (min-width: 600px) and (min-width: 1025px) {
-  .p-section__single--button-a {
+  .is-layout-flex.wp-block-buttons > .wp-block-button > .wp-block-button__link.wp-element-button {
     width: 22.34375vw;
     height: 5.4166666667vw;
     margin-top: -5.5vw;
+    font-size: 0.8333333333vw;
   }
 }
 
@@ -2199,7 +2213,7 @@ div[class=menu] > ul > li a {
     height: 1.8229166667vw;
     margin-right: 0.78125vw;
     font-size: 0.8333333333vw;
-    line-height: 1.5;
+    line-height: 1.2;
   }
 }
 
