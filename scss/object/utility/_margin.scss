@@ -4,6 +4,7 @@
 .u-margin__title--menu {
     display          : none;
     @include m.pc {
+        cursor: default;
         display      : block;
         margin-top   : m.pc-vw( 82 );
         margin-bottom: m.pc-vw( 85 );

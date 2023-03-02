@@ -2735,6 +2735,7 @@ img.wp-image-109 {
 }
 @media screen and (min-width: 1025px) {
   .u-margin__title--menu {
+    cursor: default;
     display: block;
     margin-top: 4.2708333333vw;
     margin-bottom: 4.4270833333vw;
