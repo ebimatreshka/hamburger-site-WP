@@ -35,6 +35,16 @@ h2.p-brunch-menu__title.c-title__white.c-font__M--bold.c-pseudo-element::after {
 }
 
 //sidebar
+//バーガーの上の余白
+.menu-cateogrymenu-container {
+    margin-top: m.sp-vw( 212 );
+    @include m.tablet {
+        margin-top: m.tb-vw( 212 );
+        @include m.pc {
+            margin-top: 0;
+        }
+    }
+}
 //メニュー名を右へ
 ul.sub-menu {
     padding-left    : m.sp-vw( 66 );
