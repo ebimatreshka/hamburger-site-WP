@@ -36,7 +36,7 @@
         <ul class="p-brunch-menu__ul-right c-background__menu--right">
             <li class="p-brunch-menuli">
                 <h2 class="p-brunch-menu__title c-title__white c-font__M--bold c-pseudo-element">
-                    <a href="http://hamburgersite.local/category/eatin/">Eat In</a>
+                    <a href="http://matreshka-webtunes.com/hamburger/category/eatin/">Eat In</a>
                 </h2>
                 <dl class="p-brunch-menu__dl">
                     <dt class="p-brunch-menu__dt c-font__M--bold c-text--dark-brown">Eat In</dt>
